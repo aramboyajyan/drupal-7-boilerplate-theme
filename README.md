@@ -34,5 +34,5 @@ The theme is completely built by using Drupal best practices and standards in co
 
 ### Credits
 
-[Twitter Bootstrap](http://twitter.github.com/bootstrap) grid)  
+[Twitter Bootstrap](http://twitter.github.com/bootstrap)  
 [Modernizr](http://modernizr.com)  
