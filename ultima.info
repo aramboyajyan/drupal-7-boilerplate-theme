@@ -1,0 +1,84 @@
+; ------------------------------------------------------------------------------
+; Theme created by Topsitemakers.com
+; http://www.topsitemakers.com
+; ------------------------------------------------------------------------------
+
+; ------------------------------------------------------------------------------
+; Custom created theme for [website] website
+; ------------------------------------------------------------------------------
+name = Ultima
+description = Ultimate starter custom theme. Created by: <a href="http://www.topsitemakers.com" target="_blank">topsitemakers.com</a>.
+version = 1.0
+core = 7.x
+engine = phptemplate
+screenshot = images/screenshot.png
+
+; ------------------------------------------------------------------------------
+; Stylesheets
+; ------------------------------------------------------------------------------
+; Overrides
+stylesheets[all][] = css/overrides/system.menus.css
+stylesheets[all][] = css/overrides/system.messages.css
+stylesheets[all][] = css/overrides/system.theme.css
+; Removed stylesheets
+stylesheets[all][] = css/overrides/system.messages.css
+; Theme stylesheets - base styles
+stylesheets[all][] = css/base.reset.css
+stylesheets[all][] = css/base.grid.css
+stylesheets[all][] = css/base.elements.css
+stylesheets[all][] = css/base.responsive.css
+; Theme stylesheets
+stylesheets[all][] = css/main.responsive.css
+stylesheets[all][] = css/main.css
+; Print stylesheets
+stylesheets[print][] = css/main.print.css
+
+; ------------------------------------------------------------------------------
+; Scripts
+; ------------------------------------------------------------------------------
+; jQuery plugins
+scripts[] = javascript/jquery.hoverIntent.js
+; Other scripts
+scripts[] = javascript/modernizr-2.6.2.min.js
+; Theme JS
+scripts[] = javascript/common.js
+
+; ------------------------------------------------------------------------------
+; Regions
+; ------------------------------------------------------------------------------
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[content_above] = Above content
+regions[content_below] = Below content
+regions[footer] = Footer
+
+; ------------------------------------------------------------------------------
+; Theme features; these will be available on the theme settings page
+; ------------------------------------------------------------------------------
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; ------------------------------------------------------------------------------
+; Default custom theme settings
+; ------------------------------------------------------------------------------
+settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Rights Reserved.
+
+; ------------------------------------------------------------------------------
+; Panels support
+; ------------------------------------------------------------------------------
+plugins[panels][layouts] = layouts
+
+; ------------------------------------------------------------------------------
+; Skinr support
+; ------------------------------------------------------------------------------
+skinr[api] = 2
+skinr[directory] = skins

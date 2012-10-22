@@ -1,0 +1,88 @@
+
+/**
+ * @file
+ * Stylesheet for messages
+ * Most of the elements are taken from Twitter Bootstrap project.
+ *
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
+ */
+
+/*****************************************************************************
+ * Messages
+ ****************************************************************************/
+.messages {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  color: #c09853;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.messages h4 {
+  margin: 0;
+}
+.messages ul {
+  margin-bottom: 0;
+}
+.messages .close {
+  position: relative;
+  top: -1px;
+  right: -21px;
+  line-height: 20px;
+  float: right;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.messages .close:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.messages.status {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.messages.error,
+.messages.warning {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+/* Messages end */
+
+
+/*****************************************************************************
+ * System module leftovers
+ ****************************************************************************/
+.ok {
+  color: #234600;
+}
+table tr.ok {
+  background-color: #f8fff0;
+}
+.warning {
+  color: #840;
+}
+table tr.warning {
+  background-color: #fffce5;
+}
+.error {
+  color: #8c2e0b;
+}
+table tr.error {
+  background-color: #fef5f1;
+}
+/* System module leftovers end */
