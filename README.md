@@ -19,7 +19,8 @@ The theme is completely built by using Drupal best practices and standards in co
 - [Panels](http://drupal.org/project/panels) support
 - Sample page.tpl.php (quickstart using Twitter Bootstrap grid)
 - Fix to merge all scripts and styles into only one file when aggregation is enabled
-- Extended body classes to include vocabulary IDs and all arugments of current path
+- Extended body classes to include vocabulary IDs, user roles and all arugments of current path
+- [Glyphicons](http://glyphicons.com) with Bootstrap styles
 
 ### Todo:
 
@@ -29,8 +30,6 @@ The theme is completely built by using Drupal best practices and standards in co
 - AddThis (sharing service) / video player support
 - Piwik and GA support
 - Cleanup maintenance page
-- Add glyphicons from bootstrap
-- Add body classes based on user role
 
 ### Credits
 

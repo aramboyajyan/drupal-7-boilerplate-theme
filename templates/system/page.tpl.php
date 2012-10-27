@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page.
+ *
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
+ */
+?>
+
 <!-- #logo -->
 <a href="<?php print base_path(); ?>" id="logo">
   <img src="<?php print $logo; ?>" alt="<?php print $site_name . ' | ' . $site_slogan; ?>">

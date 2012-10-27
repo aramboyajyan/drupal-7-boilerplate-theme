@@ -1,3 +1,13 @@
+<?php
+
+/**
+ * @file
+ * An example page with a setup basic Twitter Bootstrap layout
+ *
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
+ */
+?>
 
 <!-- #main -->
 <div id="main" class="container">

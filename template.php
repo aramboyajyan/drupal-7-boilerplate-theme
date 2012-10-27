@@ -45,8 +45,10 @@ require_once dirname(__FILE__) . '/extensions/preprocess/block.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/comment-wrapper.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/comment.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/html.php';
+require_once dirname(__FILE__) . '/extensions/preprocess/maintenance-page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/node.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/page.php';
+require_once dirname(__FILE__) . '/extensions/preprocess/preprocess.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
 
 /**

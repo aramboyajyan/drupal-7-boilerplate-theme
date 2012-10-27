@@ -53,6 +53,11 @@ function ultima_preprocess_html(&$vars) {
       break;
   }
 
+  // Include current user roles
+  foreach ($user->roles as $rid => $role) {
+    $vars['classes_array'][] = 'user-role-' . $role;
+  }
+
   // Include vocabulary ID when on term pages
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2)) && ($term = taxonomy_term_load(arg(2)))) {
     $vars['classes_array'][] = 'page-vocabulary-' . $term->vid;
