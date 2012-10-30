@@ -30,6 +30,7 @@
   <?php endif ?>
 
   <div class="center-wrapper">
+    
     <div class="panel-panel panel-col-first">
       <div class="inside"><?php print $content['left']; ?></div>
     </div>
@@ -41,6 +42,7 @@
     <div class="panel-panel panel-col-last">
       <div class="inside"><?php print $content['right']; ?></div>
     </div>
+    
   </div>
 
   <?php if ($content['bottom']): ?>

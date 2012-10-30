@@ -76,6 +76,9 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
+ *
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
  */
 
 // Hide some elements for later rendering

@@ -1,7 +1,12 @@
 
-.panel-3col-stacked { 
-/*  overflow: hidden;  */
-}
+/**
+ * @file
+ * Sample Panel layout styling
+ *
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
+ */
+
 .panel-3col-stacked .panel-col-top,
 .panel-3col-stacked .panel-col-bottom { 
   width: 100%; 

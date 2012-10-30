@@ -4,8 +4,8 @@
  * @file
  * Default theme implementation to display a single Drupal page while offline.
  *
- * @see template_preprocess()
- * @see template_preprocess_maintenance_page()
+ * Created by: Topsitemakers
+ * http://www.topsitemakers.com/
  */
 ?>
 <!DOCTYPE html>
