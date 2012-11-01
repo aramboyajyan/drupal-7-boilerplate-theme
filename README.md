@@ -26,10 +26,9 @@ The theme is completely built by using Drupal best practices and standards in co
 
 - Additional form alter
 - Setup search theming, user profile theming
-- Make sure the theme works out of the box for ANY custom design, semi-bootstrap implementation (sketch)
 - AddThis (sharing service) / video player support
 - Piwik and GA support
-- Cleanup maintenance page
+- Update with TB 2.2.1 styles
 
 ### Credits
 
