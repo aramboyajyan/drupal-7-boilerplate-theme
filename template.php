@@ -44,6 +44,7 @@ require_once dirname(__FILE__) . '/extensions/theme/username.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/block.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/comment-wrapper.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/comment.php';
+require_once dirname(__FILE__) . '/extensions/preprocess/field.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/html.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/maintenance-page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/node.php';

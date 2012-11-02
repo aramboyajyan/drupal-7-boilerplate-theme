@@ -3,6 +3,7 @@
 /**
  * @file
  * CSS altering
+ * 
  * Combine all stylesheets into only one file when aggregation is enabled.
  * See:
  * http://drupal.org/node/1115026

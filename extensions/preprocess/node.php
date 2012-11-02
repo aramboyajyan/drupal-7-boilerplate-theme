@@ -16,7 +16,8 @@ function ultima_preprocess_node(&$vars) {
   // 'node--blog-list.tpl.php' for teaser/list view.
   if ($vars['page']) {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_single';
-  } else {
+  }
+  else {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_list';
   }
 

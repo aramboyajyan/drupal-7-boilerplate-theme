@@ -16,7 +16,9 @@ New features and cleanup:
 
 ### November 3, 2012
 
-Added [Selectivizr]().
+- Added [Selectivizr](http://selectivizr.com)
+- Created new folder for JS overrides (<code>javascript/overrides</code>)
+- Couple of other minor wording updates
 
 <hr>
 

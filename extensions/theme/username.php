@@ -9,7 +9,7 @@
  */
 
 /**
- * Implements theme_breadcrumb().
+ * Implements theme_username().
  */
 function ultima_username(&$vars) {
   if (isset($vars['link_path'])) {

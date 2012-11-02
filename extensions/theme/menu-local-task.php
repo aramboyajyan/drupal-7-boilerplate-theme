@@ -9,7 +9,7 @@
  */
 
 /**
- * Implements theme_button().
+ * Implements theme_menu_local_task().
  */
 function ultima_menu_local_task(&$vars) {
 

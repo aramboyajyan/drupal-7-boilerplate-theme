@@ -1,6 +1,6 @@
-# Ultimate [Drupal](http://drupal.org) starter theme for websites developed by [topsitemakers.com](http://www.topsitemakers.com/)
+# Ultimate [Drupal 7](http://drupal.org) starter theme
 
-This is the ultimate starter theme for developing complex and custom [Drupal](http://drupal.org) themes. It is not created as a subtheme to any of existing themes to give you the best flexibility and let you do whatever you want.
+Robust HTMl5 starter theme suitable for custom design and projects of any complexity.
 
 The theme is completely built by using Drupal best practices and standards in coding.
 
@@ -19,7 +19,6 @@ The theme is completely built by using Drupal best practices and standards in co
 - [Skinr](http://drupal.org/project/skinr) support
 - [Panels](http://drupal.org/project/panels) support
 - Sample page.tpl.php (quickstart using Twitter Bootstrap grid)
-- Fix to merge all scripts and styles into only one file when aggregation is enabled
 - Extended body classes to include vocabulary IDs, user roles and all arugments of current path
 - [Glyphicons](http://glyphicons.com) with Bootstrap styles
 
@@ -34,5 +33,10 @@ The theme is completely built by using Drupal best practices and standards in co
 ### Credits
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap)  
+[HTML5 Boilerplate](http://html5boilerplate.com)  
 [Modernizr](http://modernizr.com)  
 [Selectivizr](http://selectivizr.com/)  
+
+<hr>
+
+By: [topsitemakers.com](http://www.topsitemakers.com).

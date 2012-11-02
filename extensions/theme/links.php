@@ -9,7 +9,7 @@
  */
 
 /**
- * Implements theme_button().
+ * Implements theme_links().
  */
 function ultima_links(&$vars) {
   $links = $vars['links'];

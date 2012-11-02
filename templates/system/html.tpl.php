@@ -54,7 +54,6 @@
 <!-- Website created by:Topsitemakers.com -->
 <!-- http://www.topsitemakers.com ---------->
 <!------------------------------------------>
-<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Topsitemakers - http://www.topsitemakers.com/">
 <meta name="designer" content="Topsitemakers - http://www.topsitemakers.com/">
