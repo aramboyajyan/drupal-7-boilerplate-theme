@@ -68,15 +68,15 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
-<!--[if lt IE 8]><div style="display: none"><![endif]-->
+<!--[if lt IE 7]><div style="display: none"><![endif]-->
 
 <?php print $page_top; ?>
 <?php print $page; ?>
 <?php print $page_bottom; ?>
 
-<!--[if lt IE 8]></div><![endif]-->
+<!--[if lt IE 7]></div><![endif]-->
 
-<!--[if lt IE 8]>
+<!--[if lt IE 7]>
 <div class="old-browser"><?php print t('Your browser is too old. Please upgrade to a different browser or install <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">Google Chrome Frame</a> in order to use this website. It is free and secure for you.'); ?></div>
 <div id="new-browsers">
   <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank" id="browser-chrome">Google Chrome</a>

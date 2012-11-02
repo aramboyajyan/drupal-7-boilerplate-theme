@@ -14,6 +14,10 @@ New features and cleanup:
 - Added body classes based on user roles
 - Added main preprocess hook (<code>template_preprocess()</code>)
 
+### November 3, 2012
+
+Added [Selectivizr]().
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

@@ -10,6 +10,7 @@ The theme is completely built by using Drupal best practices and standards in co
 - Most used preprocessing functions already setup (preprocess_page, preprocess_node, preprocess_html, preprocess_comment, preprocess_comment_wrapper, preprocess_search_result)
 - Theme settings page
 - Coming with custom build of [Modernizr](http://modernizr.com) with 'supports-' prefix to all classes for easier and more semantic browser detection features.
+- Coming with [Selectivizr](http://selectivizr.com) for emulating CSS3 pseudo-classes and attribute selectors in IE8
 - Clean organization and flexible architecture for robust websites. The <code>template.php</code> file is used only to include all other files in order to avoid having one file with 1k+ lines of functions and overrides.
 - Custom links preprocessing and wrapping in HTML5 nav tags
 - Basic [Twitter Bootstrap](http://twitter.github.com/bootstrap) styles. However, this can be disabled/removed easily so you can include whatever stylesheets you need for your project.
@@ -27,10 +28,11 @@ The theme is completely built by using Drupal best practices and standards in co
 - Additional form alter
 - Setup search theming, user profile theming
 - AddThis (sharing service) / video player support
-- Piwik and GA support
+- Support for custom tracking scripts (GA, Piwik, Woopra, Gauges etc.)
 - Update with TB 2.2.1 styles
 
 ### Credits
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap)  
 [Modernizr](http://modernizr.com)  
+[Selectivizr](http://selectivizr.com/)  

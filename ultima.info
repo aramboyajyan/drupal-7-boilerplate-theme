@@ -41,6 +41,7 @@ stylesheets[print][] = css/main.print.css
 scripts[] = javascript/jquery.hoverIntent.js
 ; Other scripts
 scripts[] = javascript/modernizr-2.6.2.min.js
+scripts[] = javascript/selectivizr-1.0.2.min.js
 ; Theme JS
 scripts[] = javascript/common.js
 
