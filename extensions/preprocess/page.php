@@ -8,7 +8,7 @@
  * http://www.topsitemakers.com/
  */
 function ultima_preprocess_page(&$vars) {
-  
+
   global $user;
 
   // Custom template suggestions (append ?sample for premade page).

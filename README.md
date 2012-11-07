@@ -29,6 +29,7 @@ The theme is completely built by using Drupal best practices and standards in co
 - AddThis (sharing service) / video player support
 - Support for custom tracking scripts (GA, Piwik, Woopra, Gauges etc.)
 - Update with TB 2.2.1 styles
+- Add automatic node loading if on node pages
 
 ### Credits
 

@@ -12,6 +12,13 @@
  * Implements theme_breadcrumb().
  */
 function ultima_breadcrumb(&$vars) {
+
+  // Commonly used things
+  global $user;
+  // If we are on node page, get the node
+  if (arg(0) == 'node' && arg(1) && !arg(2)) {
+    $node = node_load(arg(1));
+  }
   
   $breadcrumb = $vars['breadcrumb'];
 
