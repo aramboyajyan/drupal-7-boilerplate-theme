@@ -20,6 +20,10 @@ New features and cleanup:
 - Created new folder for JS overrides (<code>javascript/overrides</code>)
 - Couple of other minor wording updates
 
+### November 7, 2012
+
+- Support for CCK fields for toggling the page elements (title, tabs, breadcrumbs etc.)
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
