@@ -55,7 +55,7 @@ function ultima_preprocess_html(&$vars) {
 
   // Include current user roles
   foreach ($user->roles as $rid => $role) {
-    $vars['classes_array'][] = 'user-role-' . $role;
+    $vars['classes_array'][] = 'user-role-' . str_replace(' ', '-', strtolower($role));
   }
 
   // Include vocabulary ID when on term pages
