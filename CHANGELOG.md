@@ -24,6 +24,15 @@ New features and cleanup:
 
 - Support for CCK fields for toggling the page elements (title, tabs, breadcrumbs etc.)
 
+### November 8, 2012
+
+- Created folder for `process` functions and included short readme files in folders
+
+### November 9, 2012
+
+- Moving the contents of current `functions` folder to `hooks`; this should contain all other hook implementations.
+- `functions` should now contain only custom, theme-specific functions
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

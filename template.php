@@ -20,11 +20,9 @@ if (isset($_GET['flush'])) {
 */
 
 /**
- * Functions
+ * Custom functions
  */
-require_once dirname(__FILE__) . '/extensions/functions/css-alter.php';
-require_once dirname(__FILE__) . '/extensions/functions/form-alter.php';
-require_once dirname(__FILE__) . '/extensions/functions/js-alter.php';
+// 
 
 /**
  * Theme functions
@@ -51,6 +49,18 @@ require_once dirname(__FILE__) . '/extensions/preprocess/node.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/preprocess.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
+
+/**
+ * Process functions
+ */
+// 
+
+/**
+ * Other hooks
+ */
+require_once dirname(__FILE__) . '/extensions/hooks/css-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
 
 /**
  * Form files

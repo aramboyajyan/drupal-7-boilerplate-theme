@@ -30,6 +30,7 @@ The theme is completely built by using Drupal best practices and standards in co
 - Support for custom tracking scripts (GA, Piwik, Woopra, Gauges etc.)
 - Update with TB 2.2.1 styles
 - Add automatic node loading if on node pages
+- Unified modal window system (either from theme or from custom module)
 
 ### Credits
 
