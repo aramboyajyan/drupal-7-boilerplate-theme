@@ -32,6 +32,7 @@ New features and cleanup:
 
 - Moving the contents of current `functions` folder to `hooks`; this should contain all other hook implementations.
 - `functions` should now contain only custom, theme-specific functions
+- Added `url-[path]-current` to the list of automatically generated body classes
 
 <hr>
 
