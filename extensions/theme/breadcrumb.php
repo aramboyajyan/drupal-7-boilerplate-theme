@@ -19,6 +19,10 @@ function ultima_breadcrumb(&$vars) {
   if (arg(0) == 'node' && arg(1) && !arg(2)) {
     $node = node_load(arg(1));
   }
+  // Same for single term pages
+  elseif (arg(0) == 'taxonomy' && arg(1) == 'term' && arg(2)) {
+    $term = taxonomy_term_load(arg(2));
+  }
   
   $breadcrumb = $vars['breadcrumb'];
 

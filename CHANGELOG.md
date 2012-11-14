@@ -34,6 +34,10 @@ New features and cleanup:
 - `functions` should now contain only custom, theme-specific functions
 - Added `url-[path]-current` to the list of automatically generated body classes
 
+### November 14, 2012
+
+Automatically loading term if we are on term page (breadcrumb theme implementation).
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
