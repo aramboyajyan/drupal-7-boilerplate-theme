@@ -19,8 +19,9 @@ function ultima_preprocess_html(&$vars) {
   // doing so we will remove all slashes in URL.
   // Also to avoid name clashes with existing URLs, replace only the first
   // occurrence of the base path.
-  // Also, the 'url-current-[path]' is added so we can distinguish between
-  // 'user' and 'user/login' pages easily and without duplicating CSS.
+  // The 'url-current-[path]' is added so we can distinguish between 'user' and
+  // 'user/login' pages easily and without duplicating CSS.
+  
   // Save some overhead
   $request_uri = request_uri();
   $base_path   = base_path();
