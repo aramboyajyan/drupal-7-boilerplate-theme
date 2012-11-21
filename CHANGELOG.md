@@ -38,6 +38,10 @@ New features and cleanup:
 
 Automatically loading term if we are on term page (breadcrumb theme implementation).
 
+### November 21, 2012
+
+Adding support for excluding certain tabs (local tasks). Useful in case you have many modules installed and the large number of tabs is breaking the theme layout.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

@@ -15,6 +15,18 @@ function ultima_menu_local_task(&$vars) {
 
   $link = $vars['element']['#link'];
 
+  // List of tab names to be excluded; t() function will ensure that the
+  // tab name will be matched and excluded on multilingual sites as well.
+  // This is useful in case you have many modules installed on the site and
+  // large number of tabs break the layout of the theme.
+  $excluded_links = array(
+    t('View'),
+  );
+  if (in_array($link['title'], $excluded_links)) {
+    // Skip all further processing.
+    return;
+  }
+
   // Uncomment code below to rename the "View" tab for certain node types
   /*
   // Check if the link title is "View"

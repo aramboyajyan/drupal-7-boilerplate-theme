@@ -16,6 +16,7 @@ The theme is completely built by using Drupal best practices and standards in co
 - Custom links preprocessing and wrapping in HTML5 nav tags
 - Basic [Twitter Bootstrap](http://twitter.github.com/bootstrap) styles. However, this can be disabled/removed easily so you can include whatever stylesheets you need for your project.
 - Responsive layout and media queries out of the box. Bootstrap responsive grid is included, but also most used media queries are setup in a separate file for custom styles (smartphone - tablet - notebook - desktop). 
+- Renaming and excluding tabs (local task menu items) mechanism
 - Chrome frame for older browsers and no-JS notification
 - [Skinr](http://drupal.org/project/skinr) support
 - [Panels](http://drupal.org/project/panels) support
@@ -30,7 +31,6 @@ The theme is completely built by using Drupal best practices and standards in co
 - AddThis (sharing service) / video player support
 - Support for custom tracking scripts (GA, Piwik, Woopra, Gauges etc.)
 - Update with TB 2.2.1 styles
-- Add automatic node loading if on node pages
 - Unified modal window system (either from theme or from custom module)
 
 ### Credits
