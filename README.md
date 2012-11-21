@@ -11,6 +11,7 @@ The theme is completely built by using Drupal best practices and standards in co
 - Theme settings page
 - Coming with custom build of [Modernizr](http://modernizr.com) with 'supports-' prefix to all classes for easier and more semantic browser detection features.
 - Coming with [Selectivizr](http://selectivizr.com) for emulating CSS3 pseudo-classes and attribute selectors in IE8
+- Optional reset styles with [normalize.css](http://necolas.github.com/normalize.css/)
 - Clean organization and flexible architecture for robust websites. The <code>template.php</code> file is used only to include all other files in order to avoid having one file with 1k+ lines of functions and overrides.
 - Custom links preprocessing and wrapping in HTML5 nav tags
 - Basic [Twitter Bootstrap](http://twitter.github.com/bootstrap) styles. However, this can be disabled/removed easily so you can include whatever stylesheets you need for your project.
@@ -38,6 +39,8 @@ The theme is completely built by using Drupal best practices and standards in co
 [HTML5 Boilerplate](http://html5boilerplate.com)  
 [Modernizr](http://modernizr.com)  
 [Selectivizr](http://selectivizr.com/)  
+[Normalize.css](http://necolas.github.com/normalize.css/)  
+[Glyphicons](http://glyphicons.com)
 
 <hr>
 
