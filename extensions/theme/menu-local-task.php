@@ -13,7 +13,7 @@
  */
 function ultima_menu_local_task(&$vars) {
 
-  $link = $variables['element']['#link'];
+  $link = $vars['element']['#link'];
 
   // Uncomment code below to rename the "View" tab for certain node types
   /*
@@ -33,7 +33,7 @@ function ultima_menu_local_task(&$vars) {
   // Continue building the local task link
   $link_text = $link['title'];
 
-  if (!empty($variables['element']['#active'])) {
+  if (!empty($vars['element']['#active'])) {
     // Add text to indicate active tab for non-visual users.
     $active = '<span class="element-invisible">' . t('(active tab)') . '</span>';
 
@@ -46,6 +46,6 @@ function ultima_menu_local_task(&$vars) {
     $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
   }
 
-  return '<li' . (!empty($variables['element']['#active']) ? ' class="active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
+  return '<li' . (!empty($vars['element']['#active']) ? ' class="active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
 
 }
