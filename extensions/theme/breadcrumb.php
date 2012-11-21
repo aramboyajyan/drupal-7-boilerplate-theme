@@ -43,7 +43,7 @@ function ultima_breadcrumb(&$vars) {
     $output  = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     
     // Implode the breadcrumbs
-    $output .= '<ul class="breadcrumb"><li>' . implode('<span class="divider">»</span></li><li>', $breadcrumb) . $title.'</ul>';
+    $output .= '<ul class="breadcrumb"><li>' . implode('<span class="divider">»</span></li><li>', $breadcrumb) . $title . '</ul>';
 
     return $output;
   }
