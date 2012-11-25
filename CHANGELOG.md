@@ -42,6 +42,10 @@ Automatically loading term if we are on term page (breadcrumb theme implementati
 
 Adding support for excluding certain tabs (local tasks). Useful in case you have many modules installed and the large number of tabs is breaking the theme layout.
 
+### November 25, 2012
+
+Renaming `hoverIntent` script to include the version number and `.min` notation.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
