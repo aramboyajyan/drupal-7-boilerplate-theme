@@ -26,7 +26,7 @@
 
       // Sample click action.
       $('#header', context).click(function () {
-        console.log('Logged from common.js in the starter theme.');
+        console.log('Logged from common.js in the Ultima theme.');
       });
 
     }
