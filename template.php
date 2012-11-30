@@ -48,6 +48,7 @@ require_once dirname(__FILE__) . '/extensions/preprocess/maintenance-page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/node.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/preprocess.php';
+require_once dirname(__FILE__) . '/extensions/preprocess/region.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
 
 /**
