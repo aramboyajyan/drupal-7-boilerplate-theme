@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_node(&$vars) {
   
-  global $user;
-
   // Additional control over full/teaser node templates. Example usage:
   // 'node--blog-single.tpl.php' for full node view and
   // 'node--blog-list.tpl.php' for teaser/list view.

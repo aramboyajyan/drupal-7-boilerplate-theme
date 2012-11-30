@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_maintenance_page(&$vars) {
   
-  global $user;
-
   // 
 
 }

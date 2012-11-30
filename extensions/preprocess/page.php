@@ -9,15 +9,13 @@
  */
 function ultima_preprocess_page(&$vars) {
 
-  global $user;
-
   // Custom template suggestions (append ?sample for premade page).
   if (isset($_GET['sample'])) {
     $vars['theme_hook_suggestions'][] = 'page__sample';
   }
 
   // Add corresponding page titles to the user pages (login, register, forgot pass).
-  if (arg(0)=='user' && !$user->uid) {
+  if (arg(0)=='user' && !$vars['user']->uid) {
     if (!arg(1) || arg(1)=='login') {
       drupal_set_title(t('Log in'));
     }

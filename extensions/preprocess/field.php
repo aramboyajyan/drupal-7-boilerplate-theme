@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_field(&$vars) {
   
-  global $user;
-  
   // 
 
 }

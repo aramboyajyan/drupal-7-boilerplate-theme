@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_comment_wrapper(&$vars) {
   
-  global $user;
-
   // 
 
 }

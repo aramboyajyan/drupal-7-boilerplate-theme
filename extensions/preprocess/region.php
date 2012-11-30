@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_region(&$vars) {
   
-  global $user;
-
   // Append custom classes.
   $vars['classes_array'][] = 'ultima';
 

@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_block(&$vars) {
   
-  global $user;
-  
   // 
 
 }

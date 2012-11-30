@@ -9,8 +9,6 @@
  */
 function ultima_preprocess_html(&$vars) {
   
-  global $user;
-
   // Add custom classes to the body element.
   $vars['classes_array'][] = 'ultima-theme';
 
@@ -62,7 +60,7 @@ function ultima_preprocess_html(&$vars) {
   }
 
   // Include current user roles
-  foreach ($user->roles as $rid => $role) {
+  foreach ($vars['user']->roles as $rid => $role) {
     $vars['classes_array'][] = 'user-role-' . str_replace(' ', '-', strtolower($role));
   }
 
