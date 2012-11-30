@@ -46,6 +46,10 @@ Adding support for excluding certain tabs (local tasks). Useful in case you have
 
 Renaming `hoverIntent` script to include the version number and `.min` notation.
 
+### November 30, 2012
+
+Adding `templates/block` subfolder and including a content-wrapper div around the block content and title.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
