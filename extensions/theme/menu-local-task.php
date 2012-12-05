@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Theme button function.
+ * Theme local task function.
  *
  * Created by: Topsitemakers
  * http://www.topsitemakers.com/
