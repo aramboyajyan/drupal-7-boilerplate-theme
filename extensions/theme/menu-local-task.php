@@ -18,7 +18,7 @@ function ultima_menu_local_task(&$vars) {
   // List of tab names to be excluded; t() function will ensure that the
   // tab name will be matched and excluded on multilingual sites as well.
   // This is useful in case you have many modules installed on the site and
-  // large number of tabs break the layout of the theme.
+  // large number of tabs breaks the layout of the theme.
   $excluded_links = array(
     t('View'),
   );
