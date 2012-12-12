@@ -1,7 +1,7 @@
 
 /**
  * @file
- * Common theme JS
+ * Common theme JS.
  *
  * Created by: Topsitemakers
  * http://www.topsitemakers.com/
@@ -12,10 +12,10 @@
 
       // Open all external links in new window.
       $('a[href*="http://"]:not([href*="' + location.hostname.replace('www.', '') + '"])').each(function() {
-        $(this).attr("target", "_blank");
+        $(this).attr('target', '_blank');
       });
 
-      // Messages close button
+      // Messages close button.
       $('.messages .close', context).click(function() {
         $(this).parent('.messages').remove();
         // Remove wrapper if there are no other messages on the screen.

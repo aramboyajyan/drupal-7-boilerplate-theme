@@ -15,7 +15,8 @@ function ultima_skinr_skin_styles_info() {
   $skins['ultima_sample_style'] = array(
     'title' => t('Text color'),
     'type' => 'select',
-    // This line is optional; the class will be added even if this is not included.
+    // This line is optional; the class will be added even if this is not
+    // included.
     'attached' => array('css' => array('colors.css')),
     'default status' => 1,
     'group' => 'typography',

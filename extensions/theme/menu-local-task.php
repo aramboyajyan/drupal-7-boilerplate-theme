@@ -27,7 +27,7 @@ function ultima_menu_local_task(&$vars) {
     return;
   }
 
-  // Uncomment code below to rename the "View" tab for certain node types
+  // Uncomment code below to rename the "View" tab for certain node types.
   /*
   // Check if the link title is "View"
   if ($link['title'] == t('View')) {
@@ -42,7 +42,7 @@ function ultima_menu_local_task(&$vars) {
   }
   */
 
-  // Continue building the local task link
+  // Continue building the local task link.
   $link_text = $link['title'];
 
   if (!empty($vars['element']['#active'])) {

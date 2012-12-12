@@ -27,10 +27,10 @@ function ultima_preprocess_page(&$vars) {
     }
   }
 
-  // Tab logic
+  // Tab logic.
   // Allows custom rules for showing the page tabs.
   $vars['show_tabs'] = TRUE;
-  // Support for CCK fields which will allow toggling from node add/edit page
+  // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node']) && isset($vars['node']->field_show_tabs[0]['value'])) {
     $vars['show_title'] = TRUE;
     if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
@@ -38,10 +38,10 @@ function ultima_preprocess_page(&$vars) {
     }
   }
 
-  // Action links logic
+  // Action links logic.
   // Allows custom rules for showing the page action links.
   $vars['show_action_links'] = TRUE;
-  // Support for CCK fields which will allow toggling from node add/edit page
+  // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node']) && isset($vars['node']->field_show_action_links[0]['value'])) {
     $vars['show_title'] = TRUE;
     if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
@@ -52,7 +52,7 @@ function ultima_preprocess_page(&$vars) {
   // Page title logic
   // Allows custom rules for showing the page title.
   $vars['show_title'] = TRUE;
-  // Support for CCK fields which will allow toggling from node add/edit page
+  // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node']) && isset($vars['node']->field_show_title[0]['value'])) {
     $vars['show_title'] = TRUE;
     if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
@@ -60,10 +60,10 @@ function ultima_preprocess_page(&$vars) {
     }
   }
 
-  // Page breadcrumbs logic
+  // Page breadcrumbs logic.
   // Allows custom rules for showing the breadcrumbs.
   $vars['show_breadcrumbs'] = TRUE;
-  // Support for CCK fields which will allow toggling from node add/edit page
+  // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node']) && isset($vars['node']->field_show_breadcrumbs[0]['value'])) {
     $vars['show_title'] = TRUE;
     if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
@@ -71,7 +71,7 @@ function ultima_preprocess_page(&$vars) {
     }
   }
 
-  // Per content type processing
+  // Per content type processing.
   if (isset($vars['node'])) {
     switch ($vars['node']->type) {
       case 'page':
@@ -79,7 +79,7 @@ function ultima_preprocess_page(&$vars) {
     }
   }
 
-  // Sample page layout template classes processing
+  // Sample page layout template classes processing.
   // See templates/page--sample.tpl.php
   $vars['content_class'] = 'span12';
   if (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {

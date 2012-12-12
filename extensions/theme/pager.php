@@ -23,11 +23,11 @@ function ultima_pager(&$vars) {
   $pager_middle = ceil($quantity / 2);
   // current is the page we are currently paged to
   $pager_current = $pager_page_array[$element] + 1;
-  // first is the first page listed by this pager piece (re quantity)
+  // first is the first page listed by this pager piece (re quantity).
   $pager_first = $pager_current - $pager_middle + 1;
-  // last is the last page listed by this pager piece (re quantity)
+  // last is the last page listed by this pager piece (re quantity).
   $pager_last = $pager_current + $quantity - $pager_middle;
-  // max is the maximum page number
+  // max is the maximum page number.
   $pager_max = $pager_total[$element];
   // End of marker calculations.
 
@@ -82,9 +82,9 @@ function ultima_pager(&$vars) {
         }
         if ($i == $pager_current) {
           $items[] = array(
-            // Add Twitter Bootstrap class while keeping the default name
+            // Add Twitter Bootstrap class while keeping the default name.
             'class' => array('pager-current active'), 
-            // Wrap it in an anchor element for better styling
+            // Wrap it in an anchor element for better styling.
             'data' => '<a>' . $i . '</a>',
           );
         }

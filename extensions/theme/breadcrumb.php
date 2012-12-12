@@ -13,13 +13,13 @@
  */
 function ultima_breadcrumb(&$vars) {
 
-  // Commonly used things
+  // Commonly used things.
   global $user;
-  // If we are on node page, get the node
+  // If we are on node page, get the node.
   if (arg(0) == 'node' && arg(1) && !arg(2)) {
     $node = node_load(arg(1));
   }
-  // Same for single term pages
+  // Same for single term pages.
   elseif (arg(0) == 'taxonomy' && arg(1) == 'term' && arg(2)) {
     $term = taxonomy_term_load(arg(2));
   }
@@ -28,12 +28,12 @@ function ultima_breadcrumb(&$vars) {
 
   if (!empty($breadcrumb)) {
 
-    // Used for dynamically including the current page title
+    // Used for dynamically including the current page title.
     $include_title = TRUE;
 
     $title = '';
     if ($include_title) {
-      // Include current page's title
+      // Include current page's title.
       $title  = '<span class="divider">&raquo;</span></li>';
       $title .= '<li class="active">' . drupal_get_title() . '</li>';
     }
@@ -42,7 +42,7 @@ function ultima_breadcrumb(&$vars) {
     // screen-reader users. Make the heading invisible with .element-invisible.
     $output  = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     
-    // Implode the breadcrumbs
+    // Implode the breadcrumbs.
     $output .= '<ul class="breadcrumb"><li>' . implode('<span class="divider">»</span></li><li>', $breadcrumb) . $title . '</ul>';
 
     return $output;

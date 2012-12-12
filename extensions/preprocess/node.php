@@ -19,18 +19,18 @@ function ultima_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_list';
   }
 
-  // Override submitted variable
+  // Override submitted variable.
   $vars['submitted'] = t('Submitted by !user on !date', array(
     '!user' => $vars['name'],
     '!date' => $vars['date'],
   ));
 
   /**
-   * Per content type preprocessing
+   * Per content type preprocessing.
    */
   switch ($vars['node']->type) {
     
-    // Pages
+    // Pages.
     case 'page':
       break;
 

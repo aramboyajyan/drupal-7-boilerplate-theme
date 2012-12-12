@@ -20,7 +20,7 @@ function ultima_preprocess_html(&$vars) {
   // The 'url-current-[path]' is added so we can distinguish between 'user' and
   // 'user/login' pages easily and without duplicating CSS.
   
-  // Save some overhead
+  // Save some overhead.
   $request_uri = request_uri();
   $base_path   = base_path();
   // Get current URL without the base path and the query string.
@@ -59,12 +59,12 @@ function ultima_preprocess_html(&$vars) {
       break;
   }
 
-  // Include current user roles
+  // Include current user roles.
   foreach ($vars['user']->roles as $rid => $role) {
     $vars['classes_array'][] = 'user-role-' . str_replace(' ', '-', strtolower($role));
   }
 
-  // Include vocabulary ID when on term pages
+  // Include vocabulary ID when on term pages.
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2)) && ($term = taxonomy_term_load(arg(2)))) {
     $vars['classes_array'][] = 'page-vocabulary-' . $term->vid;
   }

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * JS altering
+ * JS altering.
  * 
  * Combine all scripts into only one file when aggregation is enabled.
  * See:

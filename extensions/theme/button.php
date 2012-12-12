@@ -21,7 +21,7 @@ function ultima_button(&$vars) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
 
-  // If this is a delete button, add an extra class
+  // If this is a delete button, add an extra class.
   if ($element['#value'] == t('Delete') || $element['#id'] == 'edit-delete') {
     $element['#attributes']['class'][] = 'form-button-delete';
   }
