@@ -15,6 +15,7 @@ function ultima_breadcrumb(&$vars) {
 
   // Commonly used things.
   global $user;
+  $divider = '<span class="divider">|</span>';
   // If we are on node page, get the node.
   if (arg(0) == 'node' && arg(1) && !arg(2)) {
     $node = node_load(arg(1));
@@ -34,7 +35,7 @@ function ultima_breadcrumb(&$vars) {
     $title = '';
     if ($include_title) {
       // Include current page's title.
-      $title  = '<span class="divider">&raquo;</span></li>';
+      $title  = $divider . '</li>';
       $title .= '<li class="active">' . drupal_get_title() . '</li>';
     }
 
@@ -43,7 +44,7 @@ function ultima_breadcrumb(&$vars) {
     $output  = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     
     // Implode the breadcrumbs.
-    $output .= '<ul class="breadcrumb"><li>' . implode('<span class="divider">»</span></li><li>', $breadcrumb) . $title . '</ul>';
+    $output .= '<ul class="breadcrumb"><li>' . implode($divider . '</li><li>', $breadcrumb) . $title . '</ul>';
 
     return $output;
   }

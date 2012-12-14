@@ -81,7 +81,7 @@
  * http://www.topsitemakers.com/
  */
 
-// Hide some elements for later rendering
+// Hide some elements for later rendering.
 hide($content['comments']);
 hide($content['links']);
 ?>

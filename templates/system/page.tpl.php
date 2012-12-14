@@ -30,12 +30,12 @@
   <?php print render($title_suffix); ?>
 <?php endif; ?>
 
-<?php if ($action_links && $show_action_links): ?>
-  <ul class="action-links"><?php print render($action_links); ?></ul>
-<?php endif; ?>
-
 <?php if ($tabs && $show_tabs): ?>
 <div id="page-tabs"><?php print render($tabs); ?></div>
+<?php endif; ?>
+
+<?php if ($action_links && $show_action_links): ?>
+  <ul class="action-links"><?php print render($action_links); ?></ul>
 <?php endif; ?>
 
 <?php if ($show_breadcrumbs): ?>

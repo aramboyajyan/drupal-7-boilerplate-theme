@@ -1,10 +1,10 @@
 ; ------------------------------------------------------------------------------
-; Theme created by Topsitemakers.com
+; Theme created by Topsitemakers
 ; http://www.topsitemakers.com
 ; ------------------------------------------------------------------------------
 
 ; ------------------------------------------------------------------------------
-; Custom created theme for [website] website
+; Custom created theme for [website] website.
 ; ------------------------------------------------------------------------------
 name = Ultima
 description = Ultimate starter custom theme. Created by: <a href="http://www.topsitemakers.com" target="_blank">topsitemakers.com</a>.
@@ -14,7 +14,7 @@ engine = phptemplate
 screenshot = images/screenshot.png
 
 ; ------------------------------------------------------------------------------
-; Stylesheets
+; Stylesheets.
 ; ------------------------------------------------------------------------------
 ; Overrides
 stylesheets[all][] = css/overrides/system.menus.css
@@ -35,7 +35,7 @@ stylesheets[all][] = css/main.css
 stylesheets[print][] = css/main.print.css
 
 ; ------------------------------------------------------------------------------
-; Scripts
+; Scripts.
 ; ------------------------------------------------------------------------------
 ; Overrides
 ; scripts[] = javascript/overrides/
@@ -51,7 +51,7 @@ scripts[] = javascript/selectivizr-1.0.2.min.js
 scripts[] = javascript/common.js
 
 ; ------------------------------------------------------------------------------
-; Regions
+; Regions.
 ; ------------------------------------------------------------------------------
 regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar
@@ -61,7 +61,7 @@ regions[content_below] = Below content
 regions[footer] = Footer
 
 ; ------------------------------------------------------------------------------
-; Theme features; these will be available on the theme settings page
+; Theme features; these will be available on the theme settings page.
 ; ------------------------------------------------------------------------------
 features[] = logo
 features[] = name
@@ -75,17 +75,17 @@ features[] = main_menu
 features[] = secondary_menu
 
 ; ------------------------------------------------------------------------------
-; Default custom theme settings
+; Default custom theme settings.
 ; ------------------------------------------------------------------------------
 settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Rights Reserved.
 
 ; ------------------------------------------------------------------------------
-; Panels support
+; Panels support.
 ; ------------------------------------------------------------------------------
 plugins[panels][layouts] = layouts
 
 ; ------------------------------------------------------------------------------
-; Skinr support
+; Skinr support.
 ; ------------------------------------------------------------------------------
 skinr[api] = 2
 skinr[directory] = skins
