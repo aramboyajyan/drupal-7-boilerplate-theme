@@ -15,14 +15,14 @@ function ultima_preprocess_page(&$vars) {
   }
 
   // Add corresponding page titles to the user pages (login, register, forgot pass).
-  if (arg(0)=='user' && !$vars['user']->uid) {
-    if (!arg(1) || arg(1)=='login') {
+  if (arg(0) == 'user' && !$vars['user']->uid) {
+    if (!arg(1) || arg(1) == 'login') {
       drupal_set_title(t('Log in'));
     }
-    elseif (arg(1)=='register') {
+    elseif (arg(1) == 'register') {
       drupal_set_title(t('Create new account'));
     }
-    elseif (arg(1)=='password') {
+    elseif (arg(1) == 'password') {
       drupal_set_title(t('Request new password'));
     }
   }
@@ -30,11 +30,18 @@ function ultima_preprocess_page(&$vars) {
   // Tab logic.
   // Allows custom rules for showing the page tabs.
   $vars['show_tabs'] = TRUE;
-  // Support for CCK fields which will allow toggling from node add/edit page.
-  if (isset($vars['node']) && isset($vars['node']->field_show_tabs[0]['value'])) {
-    $vars['show_title'] = TRUE;
-    if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
-      $vars['show_title'] = FALSE;
+  if (isset($vars['node'])) {
+    $vars['show_tabs'] = TRUE;
+    if (
+      // Support for CCK fields which will allow toggling from node add/edit
+      // page. The field should be a boolean.
+      isset($vars['node']->field_show_tabs[0]['value']) &&
+      $vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0
+    ) {
+      $vars['show_tabs'] = FALSE;
+    }
+    else {
+      // Either the field does not exist or it is set to "Show".
     }
   }
 
@@ -42,32 +49,59 @@ function ultima_preprocess_page(&$vars) {
   // Allows custom rules for showing the page action links.
   $vars['show_action_links'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
-  if (isset($vars['node']) && isset($vars['node']->field_show_action_links[0]['value'])) {
-    $vars['show_title'] = TRUE;
-    if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
-      $vars['show_title'] = FALSE;
+  if (isset($vars['node'])) {
+    $vars['show_action_links'] = TRUE;
+    if (
+      // Support for CCK fields which will allow toggling from node add/edit
+      // page. The field should be a boolean.
+      isset($vars['node']->field_show_action_links[0]['value']) &&
+      $vars['node']->field_show_action_links[LANGUAGE_NONE][0]['value'] == 0
+    ) {
+      $vars['show_action_links'] = FALSE;
+    }
+    else {
+      // Either the field does not exist or it is set to "Show".
     }
   }
 
-  // Page title logic
+  // Page title logic.
   // Allows custom rules for showing the page title.
   $vars['show_title'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
-  if (isset($vars['node']) && isset($vars['node']->field_show_title[0]['value'])) {
+  if (isset($vars['node'])) {
     $vars['show_title'] = TRUE;
-    if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
+    if (
+      // Support for CCK fields which will allow toggling from node add/edit
+      // page. The field should be a boolean.
+      isset($vars['node']->field_show_title[0]['value']) &&
+      $vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0
+    ) {
       $vars['show_title'] = FALSE;
+    }
+    else {
+      // Either the field does not exist or it is set to "Show".
+      if (drupal_is_front_page()) {
+        $vars['show_title'] = FALSE;
+      }
     }
   }
 
-  // Page breadcrumbs logic.
-  // Allows custom rules for showing the breadcrumbs.
-  $vars['show_breadcrumbs'] = TRUE;
+  // Page breadcrumb logic.
+  // Allows custom rules for showing the breadcrumb.
+  $vars['show_breadcrumb'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
-  if (isset($vars['node']) && isset($vars['node']->field_show_breadcrumbs[0]['value'])) {
-    $vars['show_title'] = TRUE;
-    if ($vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0) {
-      $vars['show_title'] = FALSE;
+  if (isset($vars['node'])) {
+    $vars['show_breadcrumb'] = TRUE;
+    if (
+      // Support for CCK fields which will allow toggling from node add/edit
+      // page. The field should be a boolean.
+      isset($vars['node']->field_show_breadcrumb[0]['value']) &&
+      $vars['node']->field_show_breadcrumb[LANGUAGE_NONE][0]['value'] == 0
+    ) {
+      $vars['show_breadcrumb'] = FALSE;
+    }
+    else {
+      // Either the field does not exist or it is set to "Show".
     }
   }
 
