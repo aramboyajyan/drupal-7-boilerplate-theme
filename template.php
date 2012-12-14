@@ -2,7 +2,8 @@
 
 /**
  * @file
- * Main theme file
+ * Main theme file.
+ *
  * Use only as an entry point for other functions, files etc.
  *
  * Created by: Topsitemakers
@@ -20,12 +21,12 @@ if (isset($_GET['flush'])) {
 */
 
 /**
- * Custom functions
+ * Custom functions.
  */
 // 
 
 /**
- * Theme functions
+ * Theme functions.
  */
 require_once dirname(__FILE__) . '/extensions/theme/breadcrumb.php';
 require_once dirname(__FILE__) . '/extensions/theme/button.php';
@@ -37,7 +38,7 @@ require_once dirname(__FILE__) . '/extensions/theme/status-messages.php';
 require_once dirname(__FILE__) . '/extensions/theme/username.php';
 
 /**
- * Preprocess functions
+ * Preprocess functions.
  */
 require_once dirname(__FILE__) . '/extensions/preprocess/block.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/comment-wrapper.php';
@@ -52,18 +53,18 @@ require_once dirname(__FILE__) . '/extensions/preprocess/region.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
 
 /**
- * Process functions
+ * Process functions.
  */
 // 
 
 /**
- * Other hooks
+ * Other hooks.
  */
 require_once dirname(__FILE__) . '/extensions/hooks/css-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
 
 /**
- * Form files
+ * Form files.
  */
 //
