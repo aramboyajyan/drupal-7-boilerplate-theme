@@ -19,6 +19,7 @@ function ultima_menu_local_task(&$vars) {
   // tab name will be matched and excluded on multilingual sites as well.
   // This is useful in case you have many modules installed on the site and
   // large number of tabs breaks the layout of the theme.
+  /*
   $excluded_links = array(
     t('View'),
   );
@@ -26,6 +27,7 @@ function ultima_menu_local_task(&$vars) {
     // Skip all further processing.
     return;
   }
+  */
 
   // Uncomment code below to rename the "View" tab for certain node types.
   /*
