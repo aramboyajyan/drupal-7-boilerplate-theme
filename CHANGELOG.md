@@ -52,6 +52,10 @@ Adding `templates/block` subfolder and including a content-wrapper div around th
 Adding `template_preprocess_region` function implementation.  
 Removing `global $user` from all preprocess functions as it is already included in `$vars['user']`.
 
+### December 17, 2012
+
+Adding support for custom tracking scripts to theme options page.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

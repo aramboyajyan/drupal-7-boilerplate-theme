@@ -23,13 +23,13 @@ The theme is completely built by using Drupal best practices and standards in co
 - Sample page.tpl.php (quickstart using Twitter Bootstrap grid)
 - Extended body classes to include vocabulary IDs, user roles and all arugments of current path
 - [Glyphicons](http://glyphicons.com) with Bootstrap styles
+- Support for adding custom tracking scripts (Google Analytics, Piwik, Woopra, Gauge etc.)
 
 ### Todo:
 
 - Additional form alter
 - Setup search theming, user profile theming
 - AddThis (sharing service) / video player support
-- Support for custom tracking scripts (GA, Piwik, Woopra, Gauges etc.)
 - Update with TB 2.2.1 styles
 - Unified modal window system (either from theme or from custom module)
 

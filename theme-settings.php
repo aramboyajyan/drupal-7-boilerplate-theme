@@ -13,7 +13,15 @@
  */
 function ultima_form_system_theme_settings_alter(&$form, $form_state) {
 
-  // Copyright line
+  // Tracking scripts.
+  $form['ultima_tracking'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Tracking scripts'),
+    '#description' => t('Paste here tracking code (e.g. Google Analytics, Gauge etc.).'),
+    '#default_value' => theme_get_setting('ultima_tracking'),
+  );
+
+  // Copyright line.
   $form['ultima_copyright'] = array(
     '#type' => 'textfield',
     '#title' => t('Copyright'),

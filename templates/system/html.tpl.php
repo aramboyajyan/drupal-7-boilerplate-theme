@@ -64,6 +64,7 @@
 <?php print $head; ?>
 <?php print $styles; ?>
 <?php print $scripts ?>
+<?php print theme_get_setting('ultima_tracking'); ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
