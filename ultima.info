@@ -16,34 +16,38 @@ screenshot = images/screenshot.png
 ; ------------------------------------------------------------------------------
 ; Stylesheets.
 ; ------------------------------------------------------------------------------
-; Overrides
+; Overrides - core modules.
 stylesheets[all][] = css/overrides/system.menus.css
 stylesheets[all][] = css/overrides/system.messages.css
 stylesheets[all][] = css/overrides/system.theme.css
-; Removed stylesheets
+; Overrides - contributed modules.
+; stylesheets[all][] = css/overrides/
+; Removed stylesheets.
 stylesheets[all][] = css/overrides/system.messages.css
-; Theme stylesheets - base styles
+; Theme stylesheets - base styles.
 stylesheets[all][] = css/base.reset.css
 stylesheets[all][] = css/base.grid.css
 stylesheets[all][] = css/base.glyphicons.css
 stylesheets[all][] = css/base.elements.css
 stylesheets[all][] = css/base.responsive.css
-; Theme stylesheets
+; Theme stylesheets.
 stylesheets[all][] = css/main.responsive.css
 stylesheets[all][] = css/main.css
-; Print stylesheets
+; Print stylesheets.
 stylesheets[print][] = css/main.print.css
 
 ; ------------------------------------------------------------------------------
 ; Scripts.
 ; ------------------------------------------------------------------------------
-; Overrides
+; Overrides - core modules.
 ; scripts[] = javascript/overrides/
-; Removed scripts
+; Overrides - contributed modules.
 ; scripts[] = javascript/overrides/
-; jQuery plugins
+; Removed scripts.
+; scripts[] = javascript/overrides/
+; jQuery plugins.
 scripts[] = javascript/jquery.hoverIntent-r6.min.js
-; Other scripts
+; Other scripts.
 scripts[] = javascript/modernizr-2.6.2.min.js
 scripts[] = javascript/respond-1.1.0.min.js
 scripts[] = javascript/selectivizr-1.0.2.min.js
