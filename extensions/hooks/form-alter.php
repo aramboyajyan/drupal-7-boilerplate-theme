@@ -56,6 +56,7 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['account']['mail']['#title']);
       break;
       
+    // User reset password form.
     case 'user_pass':
       // Hide titles and use them as placeholders.
       $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
