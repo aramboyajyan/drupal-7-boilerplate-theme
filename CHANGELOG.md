@@ -60,6 +60,7 @@ Adding support for custom tracking scripts to theme options page.
 
 - Adding populated region classes to body classes
 - Adding check for form only pages (login, register, forgot password, contact etc.)
+- Using placeholders instead of titles on form only pages
 
 <hr>
 

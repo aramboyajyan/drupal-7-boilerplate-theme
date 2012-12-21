@@ -37,6 +37,11 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       // Remove default descriptions under username and password.
       unset($form['name']['#description']);
       unset($form['pass']['#description']);
+      // Hide titles and use them as placeholders.
+      $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
+      unset($form['name']['#title']);
+      $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
+      unset($form['pass']['#title']);
       break;
 
     // User registration form.
@@ -44,8 +49,19 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       // Remove default descriptions under username and email.
       unset($form['account']['name']['#description']);
       unset($form['account']['mail']['#description']);
+      // Hide titles and use them as placeholders.
+      $form['account']['name']['#attributes']['placeholder'] = $form['account']['name']['#title'];
+      unset($form['account']['name']['#title']);
+      $form['account']['mail']['#attributes']['placeholder'] = $form['account']['mail']['#title'];
+      unset($form['account']['mail']['#title']);
       break;
       
+    case 'user_pass':
+      // Hide titles and use them as placeholders.
+      $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
+      unset($form['name']['#title']);
+      break;
+
   }
 
 }
