@@ -58,6 +58,7 @@ Adding support for custom tracking scripts to theme options page.
 
 ### December 21, 2012
 
+- Adding populated region classes to body classes
 - Adding check for form only pages (login, register, forgot password, contact etc.)
 
 <hr>

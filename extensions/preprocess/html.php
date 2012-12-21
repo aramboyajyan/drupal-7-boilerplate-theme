@@ -69,6 +69,14 @@ function ultima_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'page-vocabulary-' . $term->vid;
   }
 
+  // Include the list of populated regions.
+  foreach ($vars['page'] as $element_id => $element) {
+    // Skip 'page' attributes (all elements that begin with a hash).
+    if (substr($element_id, 0, 1) != '#') {
+      $vars['classes_array'][] = 'populated-region-' . $element_id;
+    }
+  }
+
   // Add special class to the body for form-only pages, such as contact, login,
   // registration, forgot password etc.
   if (
