@@ -29,6 +29,12 @@
         console.log('Logged from common.js in the Ultima theme.');
       });
 
+      // Automatically focus first fields on login, forgot pass and register
+      // forms.
+      if ($('form#user-login').length)    $('form#user-login input[type="text"]').focus();
+      if ($('form#user-register').length) $('form#user-register input[type="text"]').focus();
+      if ($('form#user-pass').length)     $('form#user-pass input[type="text"]').focus();
+
     }
   };
 })(jQuery);
