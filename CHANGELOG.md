@@ -22,11 +22,11 @@ New features and cleanup:
 
 ### November 7, 2012
 
-- Support for CCK fields for toggling the page elements (title, tabs, breadcrumbs etc.)
+Support for CCK fields for toggling the page elements (title, tabs, breadcrumbs etc.)
 
 ### November 8, 2012
 
-- Created folder for `process` functions and included short readme files in folders
+Created folder for `process` functions and included short readme files in folders
 
 ### November 9, 2012
 
@@ -55,6 +55,10 @@ Removing `global $user` from all preprocess functions as it is already included 
 ### December 17, 2012
 
 Adding support for custom tracking scripts to theme options page.
+
+### December 21, 2012
+
+- Adding check for form only pages (login, register, forgot password, contact etc.)
 
 <hr>
 

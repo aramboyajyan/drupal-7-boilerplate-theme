@@ -69,4 +69,22 @@ function ultima_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'page-vocabulary-' . $term->vid;
   }
 
+  // Add special class to the body for form-only pages, such as contact, login,
+  // registration, forgot password etc.
+  if (
+    // Sitewide contact form.
+    arg(0) == 'contact' ||
+    // User registration, login, forgot password.
+    (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (!$user->uid && !arg(1)))) ||
+    // Ask question, non-admin users.
+    (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'question' && !$user->uid)
+  ) {
+    $vars['classes_array'][] = 'form-only-page';
+  }
+
+  // Use an alternative template when "?layout=ajax" is passed through query string.
+  if (isset($_GET['layout']) && $_GET['layout'] == 'ajax') {
+    $vars['theme_hook_suggestions'][] = 'html__ajax';
+  }
+
 }
