@@ -774,6 +774,9 @@ table tbody tr:nth-child(odd) th {
   border: 1px solid #dddddd;
   border-left-width: 0;
 }
+.pagination ul > li.pager-ellipsis {
+  margin-left: 0;
+}
 .pagination ul > li > a:hover,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
