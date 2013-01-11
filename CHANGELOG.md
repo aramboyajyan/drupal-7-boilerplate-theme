@@ -62,6 +62,10 @@ Adding support for custom tracking scripts to theme options page.
 - Adding check for form only pages (login, register, forgot password, contact etc.)
 - Using placeholders instead of titles on form only pages
 
+### January 11, 2013
+
+Adding [jQuery placeholder](https://github.com/mathiasbynens/jquery-placeholder/tree/1.8.7) plugin to support `placeholder` attribute in older browsers.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

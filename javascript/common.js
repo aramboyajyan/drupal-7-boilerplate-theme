@@ -15,6 +15,10 @@
         $(this).attr('target', '_blank');
       });
 
+      // Trigger jQuery placeholder plugin to support the "placeholder"
+      // attribute in older browsers.
+      $('input, textarea').placeholder();
+
       // Messages close button.
       $('.messages .close', context).click(function() {
         $(this).parent('.messages').remove();

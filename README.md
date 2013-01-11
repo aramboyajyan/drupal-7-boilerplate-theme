@@ -40,7 +40,8 @@ The theme is completely built by using Drupal best practices and standards in co
 [Modernizr](http://modernizr.com)  
 [Selectivizr](http://selectivizr.com/)  
 [Normalize.css](http://necolas.github.com/normalize.css/)  
-[Glyphicons](http://glyphicons.com)
+[Glyphicons](http://glyphicons.com)  
+[jQuery placeholder](https://github.com/mathiasbynens/jquery-placeholder/tree/1.8.7)
 
 <hr>
 
