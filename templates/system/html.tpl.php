@@ -64,7 +64,7 @@
 <?php print $head; ?>
 <?php print $styles; ?>
 <?php print $scripts ?>
-<?php print theme_get_setting('ultima_tracking'); ?>
+<?php print theme_get_setting('ultima_tracking_head'); ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
@@ -90,6 +90,8 @@
 <noscript>
   <div class="old-browser"><?php print t('You need to enable JavaScript or to install a different browser in order to use this website.'); ?></div>
 </noscript>
+
+<?php print theme_get_setting('ultima_tracking_body'); ?>
 
 </body>
 </html>

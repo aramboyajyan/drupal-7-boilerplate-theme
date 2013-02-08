@@ -66,6 +66,10 @@ Adding support for custom tracking scripts to theme options page.
 
 Adding [jQuery placeholder](https://github.com/mathiasbynens/jquery-placeholder/tree/1.8.7) plugin to support `placeholder` attribute in older browsers.
 
+### February 8, 2013
+
+Adding double tracking scripts textarea in theme settings page - one for `head` and one for `body` tag.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).

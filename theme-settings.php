@@ -13,12 +13,22 @@
  */
 function ultima_form_system_theme_settings_alter(&$form, $form_state) {
 
-  // Tracking scripts.
-  $form['ultima_tracking'] = array(
+  // Tracking scripts for analytics. These will be inserted before the ending
+  // head tag (html.tpl.php).
+  $form['ultima_tracking_head'] = array(
     '#type' => 'textarea',
-    '#title' => t('Tracking scripts'),
-    '#description' => t('Paste here tracking code (e.g. Google Analytics, Gauge etc.).'),
-    '#default_value' => theme_get_setting('ultima_tracking'),
+    '#title' => t('Head tracking scripts'),
+    '#description' => t('Paste here tracking code (e.g. Google Analytics, Gauge etc.) that requires to be inserted within the body tag.'),
+    '#default_value' => theme_get_setting('ultima_tracking_head'),
+  );
+
+  // Tracking scripts for analytics. These will be inserted before the ending
+  // body tag (html.tpl.php).
+  $form['ultima_tracking_body'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Body tracking scripts'),
+    '#description' => t('Paste here tracking code (e.g. Piwik etc.) that requires to be inserted within the body tag.'),
+    '#default_value' => theme_get_setting('ultima_tracking_body'),
   );
 
   // Copyright line.
