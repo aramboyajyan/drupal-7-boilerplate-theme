@@ -70,6 +70,10 @@ Adding [jQuery placeholder](https://github.com/mathiasbynens/jquery-placeholder/
 
 Adding double tracking scripts textarea in theme settings page - one for `head` and one for `body` tag.
 
+### April 25, 2013
+
+Adding `quickfix.css`.
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
