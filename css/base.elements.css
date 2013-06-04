@@ -23,8 +23,14 @@ body {
 html {
   overflow-y: scroll;
 }
-::selection,
-::-moz-selection,
+::selection {
+  background: #555;
+  color: #FFF;
+}
+::-moz-selection {
+  background: #555;
+  color: #FFF;
+}
 ::-webkit-selection {
   background: #555;
   color: #FFF;
