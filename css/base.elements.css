@@ -613,16 +613,17 @@ body:not(.imce) input.form-button-delete:active {
  * Tables
  ****************************************************************************/
 table {
+  max-width: 100%;
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 table th,
 table td {
   padding: 8px;
-  line-height: 18px;
+  line-height: 20px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -644,15 +645,14 @@ table thead:first-child tr:first-child td {
 table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-table tbody tr:not(.forum-row):hover td,
-table tbody tr:not(.forum-row):hover th {
-  background-color: #f5f5f5;
+table table {
+  background-color: #ffffff;
 }
-/* Add borders */
+/* Borders (by default) */
 table {
   border: 1px solid #dddddd;
   border-collapse: separate;
-  *border-collapse: collapsed;
+  *border-collapse: collapse;
   border-left: 0;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -673,37 +673,103 @@ table tbody:first-child tr:first-child th,
 table tbody:first-child tr:first-child td {
   border-top: 0;
 }
-table thead:first-child tr:first-child th:first-child,
-table tbody:first-child tr:first-child td:first-child {
+table thead:first-child tr:first-child > th:first-child,
+table tbody:first-child tr:first-child > td:first-child,
+table tbody:first-child tr:first-child > th:first-child {
   -webkit-border-top-left-radius: 4px;
           border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-table thead:first-child tr:first-child th:last-child,
-table tbody:first-child tr:first-child td:last-child {
+table thead:first-child tr:first-child > th:last-child,
+table tbody:first-child tr:first-child > td:last-child,
+table tbody:first-child tr:first-child > th:last-child {
   -webkit-border-top-right-radius: 4px;
           border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
-table thead:last-child tr:last-child th:first-child,
-table tbody:last-child tr:last-child td:first-child {
-  -webkit-border-radius: 0 0 0 4px;
-     -moz-border-radius: 0 0 0 4px;
-          border-radius: 0 0 0 4px;
+table thead:last-child tr:last-child > th:first-child,
+table tbody:last-child tr:last-child > td:first-child,
+table tbody:last-child tr:last-child > th:first-child,
+table tfoot:last-child tr:last-child > td:first-child,
+table tfoot:last-child tr:last-child > th:first-child {
   -webkit-border-bottom-left-radius: 4px;
           border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
 }
-table thead:last-child tr:last-child th:last-child,
-table tbody:last-child tr:last-child td:last-child {
+table thead:last-child tr:last-child > th:last-child,
+table tbody:last-child tr:last-child > td:last-child,
+table tbody:last-child tr:last-child > th:last-child,
+table tfoot:last-child tr:last-child > td:last-child,
+table tfoot:last-child tr:last-child > th:last-child {
   -webkit-border-bottom-right-radius: 4px;
           border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-/* Add stripes */
-table tbody tr:nth-child(odd) td,
-table tbody tr:nth-child(odd) th {
+table tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+}
+table tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+}
+table caption + thead tr:first-child th:first-child,
+table caption + tbody tr:first-child td:first-child,
+table colgroup + thead tr:first-child th:first-child,
+table colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+table caption + thead tr:first-child th:last-child,
+table caption + tbody tr:first-child td:last-child,
+table colgroup + thead tr:first-child th:last-child,
+table colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+/* Stripes (by default) */
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
+}
+/* Hover selection */
+table tbody tr:hover > td,
+table tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+/* Alerts */
+table tbody tr.success > td {
+  background-color: #dff0d8;
+}
+table tbody tr.error > td {
+  background-color: #f2dede;
+}
+table tbody tr.warning > td {
+  background-color: #fcf8e3;
+}
+table tbody tr.info > td {
+  background-color: #d9edf7;
+}
+table tbody tr.success:hover > td {
+  background-color: #d0e9c6;
+}
+table tbody tr.error:hover > td {
+  background-color: #ebcccc;
+}
+table tbody tr.warning:hover > td {
+  background-color: #faf2cc;
+}
+table tbody tr.info:hover > td {
+  background-color: #c4e3f3;
+}
+/* Optional additional styles */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
 }
 /* Tables end */
 
