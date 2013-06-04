@@ -74,6 +74,10 @@ Adding double tracking scripts textarea in theme settings page - one for `head` 
 
 Adding `quickfix.css`.
 
+### June 4, 2013
+
+Updating Bootstrap styles to 2.3.2 (current latest stable version).
+
 <hr>
 
 By: [topsitemakers.com](http://www.topsitemakers.com).
