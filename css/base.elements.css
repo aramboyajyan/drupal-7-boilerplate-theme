@@ -983,11 +983,11 @@ noscript {
   font-size: 14px;
   padding-top: 135px;
 }
-#browser-chrome { background-position: 0 0; }
+#browser-chrome {  background-position: 0 0; }
 #browser-firefox { background-position: -100px 0; }
-#browser-opera { background-position: -200px 0; }
-#browser-safari { background-position: -300px 0; }
-#browser-ie { background-position: -400px 0; }
+#browser-opera {   background-position: -200px 0; }
+#browser-safari {  background-position: -300px 0; }
+#browser-ie {      background-position: -400px 0; }
 /* Old browsers/no JS notification end */
 
 
