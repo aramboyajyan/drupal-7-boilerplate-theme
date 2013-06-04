@@ -406,3 +406,105 @@ table th.span12 {
 }
 /* Table associated grid styles end */
 
+
+/**
+ * Grid styles associated with form elements
+ */
+input[class*="span"],
+select[class*="span"],
+textarea[class*="span"],
+.uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: 0;
+}
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+.controls-row [class*="span"] + [class*="span"] {
+  margin-left: 20px;
+}
+input.span12,
+textarea.span12,
+.uneditable-input.span12 {
+  width: 926px;
+}
+input.span11,
+textarea.span11,
+.uneditable-input.span11 {
+  width: 846px;
+}
+input.span10,
+textarea.span10,
+.uneditable-input.span10 {
+  width: 766px;
+}
+input.span9,
+textarea.span9,
+.uneditable-input.span9 {
+  width: 686px;
+}
+input.span8,
+textarea.span8,
+.uneditable-input.span8 {
+  width: 606px;
+}
+input.span7,
+textarea.span7,
+.uneditable-input.span7 {
+  width: 526px;
+}
+input.span6,
+textarea.span6,
+.uneditable-input.span6 {
+  width: 446px;
+}
+input.span5,
+textarea.span5,
+.uneditable-input.span5 {
+  width: 366px;
+}
+input.span4,
+textarea.span4,
+.uneditable-input.span4 {
+  width: 286px;
+}
+input.span3,
+textarea.span3,
+.uneditable-input.span3 {
+  width: 206px;
+}
+input.span2,
+textarea.span2,
+.uneditable-input.span2 {
+  width: 126px;
+}
+input.span1,
+textarea.span1,
+.uneditable-input.span1 {
+  width: 46px;
+}
+.controls-row {
+  *zoom: 1;
+}
+.controls-row [class*="span"],
+.row-fluid .controls-row [class*="span"] {
+  float: left;
+}
+.controls-row .checkbox[class*="span"],
+.controls-row .radio[class*="span"] {
+  padding-top: 5px;
+}
+/* Grid styles associated with form elements end */
