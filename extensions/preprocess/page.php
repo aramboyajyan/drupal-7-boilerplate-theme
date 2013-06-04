@@ -88,17 +88,17 @@ function ultima_preprocess_page(&$vars) {
 
   // Page breadcrumb logic.
   // Allows custom rules for showing the breadcrumb.
-  $vars['show_breadcrumb'] = TRUE;
+  $vars['show_breadcrumbs'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node'])) {
-    $vars['show_breadcrumb'] = TRUE;
+    $vars['show_breadcrumbs'] = TRUE;
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
-      isset($vars['node']->field_show_breadcrumb[0]['value']) &&
-      $vars['node']->field_show_breadcrumb[LANGUAGE_NONE][0]['value'] == 0
+      isset($vars['node']->field_show_breadcrumbs[0]['value']) &&
+      $vars['node']->field_show_breadcrumbs[LANGUAGE_NONE][0]['value'] == 0
     ) {
-      $vars['show_breadcrumb'] = FALSE;
+      $vars['show_breadcrumbs'] = FALSE;
     }
     else {
       // Either the field does not exist or it is set to "Show".
