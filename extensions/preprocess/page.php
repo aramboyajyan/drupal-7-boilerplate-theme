@@ -35,7 +35,7 @@ function ultima_preprocess_page(&$vars) {
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
       isset($vars['node']->field_show_tabs[0]['value']) &&
-      $vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0
+      $vars['node']->field_show_tabs[LANGUAGE_NONE][0]['value'] == 0
     ) {
       $vars['show_tabs'] = FALSE;
     }
