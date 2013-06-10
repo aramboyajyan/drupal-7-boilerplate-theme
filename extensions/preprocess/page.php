@@ -31,7 +31,6 @@ function ultima_preprocess_page(&$vars) {
   // Allows custom rules for showing the page tabs.
   $vars['show_tabs'] = TRUE;
   if (isset($vars['node'])) {
-    $vars['show_tabs'] = TRUE;
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
@@ -50,7 +49,6 @@ function ultima_preprocess_page(&$vars) {
   $vars['show_action_links'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node'])) {
-    $vars['show_action_links'] = TRUE;
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
@@ -69,7 +67,6 @@ function ultima_preprocess_page(&$vars) {
   $vars['show_title'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node'])) {
-    $vars['show_title'] = TRUE;
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
@@ -91,7 +88,6 @@ function ultima_preprocess_page(&$vars) {
   $vars['show_breadcrumbs'] = TRUE;
   // Support for CCK fields which will allow toggling from node add/edit page.
   if (isset($vars['node'])) {
-    $vars['show_breadcrumbs'] = TRUE;
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
