@@ -24,21 +24,21 @@
 <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
 
 <!-- Page title. -->
-<?php if ($title && $show_title): ?>
+<?php if ($title && isset($show_title) && $show_title): ?>
   <?php print render($title_prefix); ?>
   <h1 class="title" id="page-title"><?php print $title; ?></h1>
   <?php print render($title_suffix); ?>
 <?php endif; ?>
 
-<?php if ($tabs && $show_tabs): ?>
+<?php if ($tabs && isset($show_tabs) && $show_tabs): ?>
 <div id="page-tabs"><?php print render($tabs); ?></div>
 <?php endif; ?>
 
-<?php if ($action_links && $show_action_links): ?>
+<?php if ($action_links && isset($show_action_links) && $show_action_links): ?>
   <ul class="action-links"><?php print render($action_links); ?></ul>
 <?php endif; ?>
 
-<?php if ($show_breadcrumbs): ?>
+<?php if (isset($show_breadcrumbs) && $show_breadcrumbs): ?>
 <div id="breadcrumb" class="full-width-wrap"><?php print $breadcrumb; ?></div>
 <?php endif; ?>
 
