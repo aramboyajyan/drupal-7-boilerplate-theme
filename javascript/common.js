@@ -7,7 +7,7 @@
  * http://www.topsitemakers.com/
  */
 (function ($) {
-  Drupal.behaviors.UltimaTheme = {
+  Drupal.behaviors.PongTheme = {
     attach: function (context, settings) {
 
       // Open all external links in new window.
@@ -30,14 +30,15 @@
 
       // Sample click action.
       $('#header', context).click(function () {
-        console.log('Logged from common.js in the Ultima theme.');
+        console.log('Logged from common.js in the Pong theme.');
       });
 
       // Automatically focus first fields on login, forgot pass and register
-      // forms.
-      if ($('form#user-login').length)    $('form#user-login input[type="text"]').focus();
+      // forms as well as the login block.
+      if ($('form#user-login').length)     $('form#user-login input[type="text"]').focus();
       if ($('#user-register-form').length) $('#user-register-form input[type="text"]').eq(0).focus();
-      if ($('form#user-pass').length)     $('form#user-pass input[type="text"]').focus();
+      if ($('form#user-pass').length)      $('form#user-pass input[type="text"]').focus();
+      if ($('#user-login-form').length)    $('#user-login-form input[type="text"]').focus();
 
     }
   };
