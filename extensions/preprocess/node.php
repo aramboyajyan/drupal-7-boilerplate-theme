@@ -10,11 +10,15 @@
 function ultima_preprocess_node(&$vars) {
   
   // Additional control over full/teaser node templates. Example usage:
-  // 'node--blog-single.tpl.php' for full node view and
-  // 'node--blog-list.tpl.php' for teaser/list view.
+  // 'node--blog-single.tpl.php'   for full node view.
+  // 'node--blog-category.tpl.php' for teaser/category view.
+  // 'node--blog-list.tpl.php'     for teaser/list view.
   /*
   if ($vars['page']) {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_single';
+  }
+  elseif (arg(0) == 'taxonomy' && arg(1) == 'term' && arg(2)) {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_category';
   }
   else {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_list';
