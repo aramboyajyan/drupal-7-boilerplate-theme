@@ -65,6 +65,8 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['name']['#title']);
       // Add login link.
       $form['login']['#markup'] = l(t('Login'), 'user/login', array('attributes' => array('class' => 'additional-link')));
+      // Rename the submit button.
+      $form['actions']['submit']['#value'] = t('Reset');
       break;
 
   }
