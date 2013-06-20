@@ -42,6 +42,8 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['name']['#title']);
       $form['pass']['#attributes']['placeholder'] = $form['pass']['#title'];
       unset($form['pass']['#title']);
+      // Add forgot pass link.
+      $form['forgot']['#markup'] = l(t('Reset Password'), 'user/password', array('attributes' => array('class' => 'additional-link')));
       break;
 
     // User registration form.
