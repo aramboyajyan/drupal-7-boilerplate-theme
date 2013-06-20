@@ -106,7 +106,6 @@ function ultima_preprocess_page(&$vars) {
   // password pages.
   if (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (!$vars['user']->uid && !arg(1)))) {
     $vars['show_tabs'] = FALSE;
-    $vars['show_title'] = FALSE;
   }
 
   // Per content type processing.
