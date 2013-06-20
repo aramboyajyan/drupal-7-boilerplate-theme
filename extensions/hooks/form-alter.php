@@ -63,6 +63,8 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       // Hide titles and use them as placeholders.
       $form['name']['#attributes']['placeholder'] = $form['name']['#title'];
       unset($form['name']['#title']);
+      // Add login link.
+      $form['login']['#markup'] = l(t('Login'), 'user/login', array('attributes' => array('class' => 'additional-link')));
       break;
 
   }
