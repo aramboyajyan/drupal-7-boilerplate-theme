@@ -56,6 +56,8 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['account']['name']['#title']);
       $form['account']['mail']['#attributes']['placeholder'] = $form['account']['mail']['#title'];
       unset($form['account']['mail']['#title']);
+      // Add login link.
+      $form['login']['#markup'] = l(t('Login'), 'user/login', array('attributes' => array('class' => 'additional-link')));
       break;
       
     // User reset password form.
