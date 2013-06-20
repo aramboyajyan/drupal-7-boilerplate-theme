@@ -14,7 +14,8 @@ function ultima_preprocess_page(&$vars) {
     $vars['theme_hook_suggestions'][] = 'page__sample';
   }
 
-  // Add corresponding page titles to the user pages (login, register, forgot pass).
+  // Add corresponding page titles to the user pages (login, register, forgot
+  // pass).
   if (arg(0) == 'user' && !$vars['user']->uid) {
     if (!arg(1) || arg(1) == 'login') {
       drupal_set_title(t('Log in'));
@@ -99,6 +100,13 @@ function ultima_preprocess_page(&$vars) {
     else {
       // Either the field does not exist or it is set to "Show".
     }
+  }
+
+  // Hide tabs and page title on user registration, login and forgot
+  // password pages.
+  if (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (!$vars['user']->uid && !arg(1)))) {
+    $vars['show_tabs'] = FALSE;
+    $vars['show_title'] = FALSE;
   }
 
   // Per content type processing.
