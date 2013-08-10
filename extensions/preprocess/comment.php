@@ -18,6 +18,6 @@ function ultima_preprocess_comment(&$vars) {
 
   // Override the default "permalink" and change the href so it does not open
   // the separate "/comment/[cid]" page.
-  $vars['permalink'] = l('Permalink' . $vars['comment']->cid, 'node/' . $vars['node']->nid, array('fragment' => 'comment-' . $vars['comment']->cid));
+  $vars['permalink'] = l('Permalink #' . $vars['comment']->cid, 'node/' . $vars['node']->nid, array('fragment' => 'comment-' . $vars['comment']->cid));
 
 }
