@@ -35,7 +35,7 @@ function ultima_preprocess_page(&$vars) {
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
-      isset($vars['node']->field_show_tabs[0]['value']) &&
+      isset($vars['node']->field_show_tabs[LANGUAGE_NONE][0]['value']) &&
       $vars['node']->field_show_tabs[LANGUAGE_NONE][0]['value'] == 0
     ) {
       $vars['show_tabs'] = FALSE;
@@ -53,7 +53,7 @@ function ultima_preprocess_page(&$vars) {
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
-      isset($vars['node']->field_show_action_links[0]['value']) &&
+      isset($vars['node']->field_show_action_links[LANGUAGE_NONE][0]['value']) &&
       $vars['node']->field_show_action_links[LANGUAGE_NONE][0]['value'] == 0
     ) {
       $vars['show_action_links'] = FALSE;
@@ -71,7 +71,7 @@ function ultima_preprocess_page(&$vars) {
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
-      isset($vars['node']->field_show_title[0]['value']) &&
+      isset($vars['node']->field_show_title[LANGUAGE_NONE][0]['value']) &&
       $vars['node']->field_show_title[LANGUAGE_NONE][0]['value'] == 0
     ) {
       $vars['show_title'] = FALSE;
@@ -92,7 +92,7 @@ function ultima_preprocess_page(&$vars) {
     if (
       // Support for CCK fields which will allow toggling from node add/edit
       // page. The field should be a boolean.
-      isset($vars['node']->field_show_breadcrumbs[0]['value']) &&
+      isset($vars['node']->field_show_breadcrumbs[LANGUAGE_NONE][0]['value']) &&
       $vars['node']->field_show_breadcrumbs[LANGUAGE_NONE][0]['value'] == 0
     ) {
       $vars['show_breadcrumbs'] = FALSE;
