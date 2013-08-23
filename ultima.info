@@ -83,6 +83,8 @@ features[] = secondary_menu
 ; ----------------------------------------------------------------------------
 ; Default custom theme settings.
 ; ----------------------------------------------------------------------------
+settings[ultima_breadcrumb_divider] = "|"
+settings[ultima_breadcrumb_title_limit] = 60
 settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Rights Reserved.
 
 ; ----------------------------------------------------------------------------
