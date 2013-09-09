@@ -119,7 +119,7 @@
   <div id="copyright" class="row">
     <div class="span12">
       <p class="pull-right"><a href="#"><?php print t('Back to top'); ?></a></p>
-      <p><?php print str_replace('[year]', date('Y'), theme_get_setting('ultima_copyright')); ?></p>
+      <p><?php print str_replace('[year]', date('Y', REQUEST_TIME), theme_get_setting('ultima_copyright')); ?></p>
     </div>
   </div>
   <!-- /#copyright -->

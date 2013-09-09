@@ -79,4 +79,4 @@
 <?php print render($page['footer']) ?>
 <?php endif; ?>
 
-<?php print str_replace('[year]', date('Y'), theme_get_setting('ultima_copyright')); ?>
+<?php print str_replace('[year]', date('Y', REQUEST_TIME), theme_get_setting('ultima_copyright')); ?>
