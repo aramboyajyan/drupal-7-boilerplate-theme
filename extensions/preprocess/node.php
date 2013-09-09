@@ -14,7 +14,7 @@ function ultima_preprocess_node(&$vars) {
   // 'node--blog-category.tpl.php' for teaser/category view.
   // 'node--blog-list.tpl.php'     for teaser/list view.
   /*
-  if ($vars['page']) {
+  if (isset($vars['page']) && $vars['page']) {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '_single';
   }
   elseif (arg(0) == 'taxonomy' && arg(1) == 'term' && arg(2)) {
