@@ -27,11 +27,7 @@ The theme is completely built by using Drupal best practices and standards in co
 
 ### Todo:
 
-- Additional form alter
 - Setup search theming, user profile theming
-- AddThis (sharing service) / video player support
-- Update with TB 2.2.1 styles
-- Unified modal window system (either from theme or from custom module)
 
 ### Credits
 
