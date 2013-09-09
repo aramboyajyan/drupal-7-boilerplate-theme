@@ -1752,5 +1752,10 @@ fieldset.vertical-tabs-pane legend {
 html.js input.form-autocomplete {
   background-position: 100% 8px;
 }
+/* Full width wrap elements. */
+.full-width-wrap {
+  float: left;
+  width: 100%;
+}
 /* Various other styles end */
 
