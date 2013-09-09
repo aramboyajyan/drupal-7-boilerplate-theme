@@ -26,7 +26,11 @@
   <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'nav-main', 'class' => array('links', 'inline', 'clearfix', 'span12')), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
 <?php endif; ?>
 
-<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
+<?php if ($page['secondary_menu']): ?>
+  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
+<?php else: ?>
+  <?php print render($page['secondary_menu']); ?>
+<?php endif; ?>
 
 <!-- Page title. -->
 <?php if ($title && isset($show_title) && $show_title): ?>
