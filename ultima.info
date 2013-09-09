@@ -59,6 +59,7 @@ scripts[] = javascript/common.js
 ; ----------------------------------------------------------------------------
 ; Regions.
 ; ----------------------------------------------------------------------------
+regions[main_menu] = Main menu
 regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[content] = Content
