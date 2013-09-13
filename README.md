@@ -25,10 +25,6 @@ The theme is completely built by using Drupal best practices and standards in co
 - [Glyphicons](http://glyphicons.com) with Bootstrap styles
 - Support for adding custom tracking scripts (Google Analytics, Piwik, Woopra, Gauge etc.)
 
-### Todo:
-
-- Setup search theming, user profile theming
-
 ### Credits
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap)  
