@@ -60,6 +60,13 @@ function ultima_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' => t('Enter the number of characters that should be displayed in breadcrumb page title.'),
     '#default_value' => theme_get_setting('ultima_breadcrumb_title_limit'),
   );
+  // Trail for trimmed page titles.
+  $form['breadcrumb']['ultima_breadcrumb_title_trail'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Trail text'),
+    '#description' => t('This text will be displayed at the end of trimmed titles.'),
+    '#default_value' => theme_get_setting('ultima_breadcrumb_title_trail'),
+  );
 
   // Copyright line.
   $form['ultima_copyright'] = array(

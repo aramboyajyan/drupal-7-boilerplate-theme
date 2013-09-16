@@ -87,6 +87,7 @@ features[] = secondary_menu
 ; ----------------------------------------------------------------------------
 settings[ultima_breadcrumb_divider] = "|"
 settings[ultima_breadcrumb_title_limit] = 60
+settings[ultima_breadcrumb_title_trail] = ...
 settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Rights Reserved.
 
 ; ----------------------------------------------------------------------------

@@ -40,8 +40,9 @@ function ultima_breadcrumb(&$vars) {
       $title  = $divider . '</li>';
       $raw_title = drupal_get_title();
       $title_limit = theme_get_setting('ultima_breadcrumb_title_limit');
+      $title_trail = theme_get_setting('ultima_breadcrumb_title_trail');
       if (strlen($raw_title) > $title_limit) {
-        $trimmed_title = '<span title="' . $raw_title . '">' . substr(drupal_get_title(), 0, $title_limit) . '...</span>';
+        $trimmed_title = '<span title="' . $raw_title . '">' . substr(drupal_get_title(), 0, $title_limit) . $title_trail . '</span>';
       }
       else {
         $trimmed_title = $raw_title;
