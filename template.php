@@ -63,6 +63,7 @@ require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
 require_once dirname(__FILE__) . '/extensions/hooks/css-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/menu-breadcrumb-alter.php';
 
 /**
  * Form files.
