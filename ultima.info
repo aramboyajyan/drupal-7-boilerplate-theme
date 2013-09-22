@@ -59,14 +59,14 @@ scripts[] = javascript/common.js
 ; ----------------------------------------------------------------------------
 ; Regions.
 ; ----------------------------------------------------------------------------
-regions[main_menu] = Main menu
+regions[main_menu]      = Main menu
 regions[secondary_menu] = Secondary menu
-regions[sidebar_first] = Left sidebar
+regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
-regions[content] = Content
-regions[content_above] = Above content
-regions[content_below] = Below content
-regions[footer] = Footer
+regions[content]        = Content
+regions[content_above]  = Above content
+regions[content_below]  = Below content
+regions[footer]         = Footer
 
 ; ----------------------------------------------------------------------------
 ; Theme features; these will be available on the theme settings page.
@@ -86,9 +86,9 @@ features[] = secondary_menu
 ; Default custom theme settings.
 ; ----------------------------------------------------------------------------
 settings[ultima_breadcrumb_divider] = "|"
-settings[ultima_breadcrumb_title_limit] = "60"
-settings[ultima_breadcrumb_title_trail] = "..."
-settings[ultima_copyright] = "Copyrights [year] &copy; Arani Group Inc. All Rights Reserved."
+settings[ultima_breadcrumb_title_limit] = 60
+settings[ultima_breadcrumb_title_trail] = ...
+settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Rights Reserved.
 
 ; ----------------------------------------------------------------------------
 ; Panels support.
