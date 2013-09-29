@@ -24,7 +24,8 @@ function ultima_css_alter(&$css) {
   // The Print style sheets.
   $print = array();
 
-  // Add some weight to the new $css array so every element keeps its position.
+  // Add some weight to the new $css array so every element keeps its
+  // position.
   $weight = 0;
 
   foreach ($css as $name => $style) {

@@ -51,7 +51,7 @@ function ultima_breadcrumb(&$vars) {
     }
 
     // Provide a navigational heading to give context for breadcrumb links to
-    // screen-reader users. Make the heading invisible with .element-invisible.
+    // screen-reader users and make header invisible.
     $output  = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     
     // Implode the breadcrumbs.

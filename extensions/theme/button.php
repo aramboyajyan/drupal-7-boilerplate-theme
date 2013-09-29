@@ -24,6 +24,8 @@ function ultima_button(&$vars) {
   // If this is a delete button, add an extra class.
   if ($element['#value'] == t('Delete') || $element['#id'] == 'edit-delete') {
     $element['#attributes']['class'][] = 'form-button-delete';
+    // If you are using Bootstrap styles:
+    // $element['#attributes']['class'][] = 'btn-danger';
   }
 
   return '<input' . drupal_attributes($element['#attributes']) . ' />';

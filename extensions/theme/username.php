@@ -19,10 +19,11 @@ function ultima_username(&$vars) {
     $output = l($vars['name'] . $vars['extra'], $vars['link_path'], $vars['link_options']);
   }
   else {
-    // Modules may have added important attributes so they must be included
-    // in the output. Additional classes may be added as array elements like
+    // Modules may have added important attributes so they must be included in
+    // the output. Additional classes may be added as array elements like
     // $vars['attributes_array']['class'][] = 'myclass';
     $output = '<span' . drupal_attributes($vars['attributes_array']) . '>' . $vars['name'] . $vars['extra'] . '</span>';
   }
+  
   return $output;
 }

@@ -15,7 +15,7 @@ function ultima_links(&$vars) {
   $links = $vars['links'];
   $wrapper_attributes = isset($vars['wrapper_attributes']) ? $vars['wrapper_attributes'] : array();
   $attributes = $vars['attributes'];
-  // Set wrapper ID for easier theming
+  // Set wrapper ID for easier theming.
   if (isset($attributes['id']) && !isset($wrapper_attributes['id'])) {
     $wrapper_attributes['id'] = $vars['attributes']['id'] . '-wrapper';
   }
@@ -26,12 +26,12 @@ function ultima_links(&$vars) {
   if (count($links) > 0) {
     $output = '';
 
-    // Treat the heading first if it is present to prepend it to the
-    // list of links.
+    // Treat the heading first if it is present to prepend it to the list of
+    // links.
     if (!empty($heading)) {
       if (is_string($heading)) {
-        // Prepare the array that will be used when the passed heading
-        // is a string.
+        // Prepare the array that will be used when the passed heading is a
+        // string.
         $heading = array(
           'text' => $heading,
           // Set the default level of the heading. 
@@ -45,7 +45,7 @@ function ultima_links(&$vars) {
       $output .= '>' . check_plain($heading['text']) . '</' . $heading['level'] . '>';
     }
 
-    // Add support for html5 nav element
+    // Add support for html5 nav element.
     $output .= '<nav' . drupal_attributes($wrapper_attributes) . '>';
     $output .= '<ul' . drupal_attributes($attributes) . '>';
 
@@ -55,7 +55,8 @@ function ultima_links(&$vars) {
     foreach ($links as $key => $link) {
       $class = array($key);
 
-      // Add first, last and active classes to the list of links to help out themers.
+      // Add first, last and active classes to the list of links to help out
+      // themers.
       if ($i == 1) {
         $class[] = 'first';
       }
@@ -73,7 +74,8 @@ function ultima_links(&$vars) {
         $output .= l($link['title'], $link['href'], $link);
       }
       elseif (!empty($link['title'])) {
-        // Some links are actually not links, but we wrap these in <span> for adding title and class attributes.
+        // Some links are actually not links, but we wrap these in <span> for
+        // adding title and class attributes.
         if (empty($link['html'])) {
           $link['title'] = check_plain($link['title']);
         }
