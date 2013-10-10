@@ -25,6 +25,11 @@ The theme is completely built by using Drupal best practices and standards in co
 - [Glyphicons](http://glyphicons.com) with Bootstrap styles
 - Support for adding custom tracking scripts (Google Analytics, Piwik, Woopra, Gauge etc.)
 
+### Note
+
+There is another [Ultima theme](https://drupal.org/sandbox/topsitemakers/1825322) repository on Drupal.org; the reason this is on GitHub is that it is much more opinionated and contains third-party libraries.  
+Check out the code of both themes to see which one works better for you.
+
 ### Credits
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap)  
