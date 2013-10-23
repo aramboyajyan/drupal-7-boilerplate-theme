@@ -1,4 +1,3 @@
-
 /**
  * @file
  * Common theme JS.
@@ -7,7 +6,7 @@
  * http://www.topsitemakers.com/
  */
 (function ($) {
-  Drupal.behaviors.PongTheme = {
+  Drupal.behaviors.UltimaTheme = {
     attach: function (context, settings) {
 
       // Open all external links in new window.
