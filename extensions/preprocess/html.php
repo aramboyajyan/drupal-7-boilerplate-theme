@@ -26,6 +26,11 @@ function ultima_preprocess_html(&$vars) {
   // Get current URL without the base path and the query string.
   $current_url = explode('?', substr_replace($request_uri, '', stripos($request_uri, $base_path), strlen($base_path)));
   $url_parts = explode('/', $current_url[0]);
+  // Add each URL argument to the list of body classes separately.
+  foreach ($url_parts as $url_part) {
+    $vars['classes_array'][] = 'url-segment-' . $url_part;
+  }
+  // Add one-by-one argument of the current URL to the body classes.
   switch (count($url_parts)) {
     case 1:
       $vars['classes_array'][] = 'url-' . $url_parts[0];
