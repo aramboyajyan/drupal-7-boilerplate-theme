@@ -51,6 +51,7 @@ require_once dirname(__FILE__) . '/extensions/preprocess/page.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/preprocess.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/region.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
+require_once dirname(__FILE__) . '/extensions/preprocess/user-profile.php';
 
 /**
  * Process functions.
