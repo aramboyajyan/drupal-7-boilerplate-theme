@@ -29,5 +29,6 @@ function ultima_skinr_skin_styles_info() {
       'color_6' => array('title' => t('Violet'), 'class' => array('violet')),
     ),
   );
+  
   return $skins;
 }
