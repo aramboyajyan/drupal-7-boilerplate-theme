@@ -32,6 +32,7 @@ require_once dirname(__FILE__) . '/extensions/theme/breadcrumb.php';
 require_once dirname(__FILE__) . '/extensions/theme/button.php';
 require_once dirname(__FILE__) . '/extensions/theme/item-list.php';
 require_once dirname(__FILE__) . '/extensions/theme/links.php';
+require_once dirname(__FILE__) . '/extensions/theme/menu-link.php';
 require_once dirname(__FILE__) . '/extensions/theme/menu-local-task.php';
 require_once dirname(__FILE__) . '/extensions/theme/pager.php';
 require_once dirname(__FILE__) . '/extensions/theme/status-messages.php';
