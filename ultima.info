@@ -93,10 +93,10 @@ settings[ultima_copyright] = Copyrights [year] &copy; Arani Group Inc. All Right
 ; ----------------------------------------------------------------------------
 ; Panels support.
 ; ----------------------------------------------------------------------------
-plugins[panels][layouts] = layouts
+plugins[panels][layouts] = extensions/layouts
 
 ; ----------------------------------------------------------------------------
 ; Skinr support.
 ; ----------------------------------------------------------------------------
 skinr[api] = 2
-skinr[directory] = skins
+skinr[directory] = extensions/skins
