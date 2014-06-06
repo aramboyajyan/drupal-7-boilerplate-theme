@@ -27,9 +27,9 @@
 <?php endif; ?>
 
 <?php if ($page['secondary_menu']): ?>
-  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
-<?php else: ?>
   <?php print render($page['secondary_menu']); ?>
+<?php else: ?>
+  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
 <?php endif; ?>
 
 <!-- Page title. -->
