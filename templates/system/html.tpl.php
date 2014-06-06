@@ -77,7 +77,7 @@
 <!--[if lt IE 7]></div><![endif]-->
 
 <!--[if lt IE 7]>
-<div class="old-browser"><?php print t('Your browser is too old. Please upgrade to a different browser or install <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">Google Chrome Frame</a> in order to use this website. It is free and secure for you.'); ?></div>
+<div class="old-browser"><?php print t('Your browser is too old. Please upgrade to a different browser in order to use this website. It is free and secure for you.'); ?></div>
 <div id="new-browsers">
   <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank" id="browser-chrome">Google Chrome</a>
   <a title="Mozilla Firefox" href="http://www.firefox.com/" target="_blank" id="browser-firefox">Mozilla Firefox</a>
