@@ -44,6 +44,7 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['pass']['#title']);
       // Add forgot pass link.
       $form['forgot']['#markup'] = l(t('Reset Password'), 'user/password', array('attributes' => array('class' => 'additional-link')));
+      $form['forgot']['#weight'] = 100;
       break;
 
     // User registration form.
@@ -58,6 +59,7 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['account']['mail']['#title']);
       // Add login link.
       $form['login']['#markup'] = l(t('Login'), 'user/login', array('attributes' => array('class' => 'additional-link')));
+      $form['login']['#weight'] = 100;
       // Rename the submit button.
       $form['actions']['submit']['#value'] = t('Register');
       break;
@@ -69,6 +71,7 @@ function ultima_form_alter(&$form, &$form_state, $form_id) {
       unset($form['name']['#title']);
       // Add login link.
       $form['login']['#markup'] = l(t('Login'), 'user/login', array('attributes' => array('class' => 'additional-link')));
+      $form['login']['#weight'] = 100;
       // Rename the submit button.
       $form['actions']['submit']['#value'] = t('Reset');
       break;
