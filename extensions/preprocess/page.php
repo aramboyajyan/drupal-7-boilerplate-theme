@@ -16,7 +16,7 @@ function ultima_preprocess_page(&$vars) {
 
   // Add corresponding page titles to the user pages (login, register, forgot
   // pass).
-  if (arg(0) == 'user' && !$vars['user']->uid) {
+  if (arg(0) == 'user' && user_is_anonymous()) {
     if (!arg(1) || arg(1) == 'login') {
       drupal_set_title(t('Log in'));
     }
@@ -104,7 +104,7 @@ function ultima_preprocess_page(&$vars) {
 
   // Hide tabs and page title on user registration, login and forgot
   // password pages.
-  if (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (!$vars['user']->uid && !arg(1)))) {
+  if (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (user_is_anonymous() && !arg(1)))) {
     $vars['show_tabs'] = FALSE;
   }
 
