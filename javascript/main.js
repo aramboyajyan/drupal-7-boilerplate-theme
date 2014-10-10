@@ -39,6 +39,29 @@
       if ($('form#user-pass').length)      $('form#user-pass input[type="text"]').focus();
       if ($('#user-login-form').length)    $('#user-login-form input[type="text"]').focus();
 
+      // Popup links. This is handy when certain links need to display just the
+      // information, outside of the main theme of the site, for example when
+      // printing out the invoices. Just add "popup-link" class to those links,
+      // and they will automatically be opened in a new 800x600px window.
+      // 
+      // If you want to override size, just use "data-popup-width" and
+      // "data-popup-height" attributes to change the values.
+      var $popupLinks = $('.popup-link');
+      var popupLinkDefaultWidth  = 800;
+      var popupLinkDefaultHeight = 600;
+      $popupLinks.click(function() {
+        var $link = $(this);
+        // Get width and height of the popup.
+        var popupWidth  = ($link.attr('data-popup-width') !== undefined) ? $link.attr('data-popup-width') : popupLinkDefaultWidth;
+        var popupHeight = ($link.attr('data-popup-height') !== undefined) ? $link.attr('data-popup-height') : popupLinkDefaultHeight;
+        // Create the window.
+        var popupWindow = window.open($link.attr('href'), '', 'height=' + popupHeight + ',width=' + popupWidth);
+        if (window.focus) {
+          popupWindow.focus();
+        }
+        return false;
+      });
+
     }
   };
 })(jQuery);
