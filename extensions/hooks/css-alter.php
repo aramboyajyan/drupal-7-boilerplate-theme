@@ -32,7 +32,7 @@ function ultima_css_alter(&$css) {
 
     // Leave untouched the conditional stylesheets; put all the rest inside a
     // 0 group.
-    if ($css[$name]['browsers']['!IE']) {
+    if (isset($css[$name]['browsers']['!IE']) && !empty($css[$name]['browsers']['!IE'])) {
       $css[$name]['group'] = 0;
       $css[$name]['weight'] = ++$weight;
       $css[$name]['every_page'] = TRUE;
