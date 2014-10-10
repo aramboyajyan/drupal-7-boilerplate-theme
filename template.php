@@ -64,6 +64,7 @@ require_once dirname(__FILE__) . '/extensions/preprocess/user-profile.php';
  */
 require_once dirname(__FILE__) . '/extensions/hooks/css-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/element-info-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/entity-view.php';
 require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/menu-breadcrumb-alter.php';
