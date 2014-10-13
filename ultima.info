@@ -44,6 +44,8 @@ stylesheets[print][] = css/main.print.css
 ; scripts[] = javascript/overrides/
 ; Overrides - contributed modules.
 ; scripts[] = javascript/overrides/
+; Overrides - other scripts.
+scripts[] = javascript/overrides/autocomplete.js
 ; Removed scripts.
 ; scripts[] = javascript/overrides/
 ; jQuery plugins.
