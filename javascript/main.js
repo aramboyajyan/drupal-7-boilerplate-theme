@@ -148,6 +148,22 @@
 
   };
 
+    $input
+      .keydown(function (event) { return ac.onkeydown(this, event); })
+      .keyup(function (event) { ac.onkeyup(this, event); })
+      // Just this part is different, but because further code adds more methods
+      // to the Drupal.jsAC object, which is overridden here, it is necessary to
+      // copy the rest of the implementation in order to avoid JS errors.
+      // Uncomment the following line, or remove the whole "AUTOCOMPLETE
+      // OVERRIDE START" section once done with the development.
+      // 
+      // Uncomment the following line (and add a semicolon in the line above)
+      // when you want to leave the autocomplete box open in order to style it
+      // or debug that popup.
+      .blur(function () { ac.hidePopup(); ac.db.cancel(); });
+
+  };
+
   /**
    * Handler for the "keydown" event.
    */
