@@ -9,9 +9,9 @@
  */
 
 /**
- * Implements hook_entity_view().
+ * Implements hook_entity_view_alter().
  */
-function ultima_entity_view($entity, $type, $view_mode, $langcode) {
+function ultima_entity_view_alter($entity, $type, $view_mode, $langcode) {
   switch ($type) {
     case 'your_entity_name':
       // 

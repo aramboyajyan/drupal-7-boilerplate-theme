@@ -81,4 +81,39 @@
 
     }
   };
+
+  /**
+   * Positions the suggestions popup and starts a search.
+   * 
+   * This is used for autocomplete suggestions dropdown. If you do not wish to
+   * override the width of suggestions popup, feel free to remove this whole
+   * block.
+   */
+  Drupal.jsAC.prototype.populatePopup = function () {
+    var $input = $(this.input);
+    var position = $input.position();
+    // Show popup.
+    if (this.popup) {
+      $(this.popup).remove();
+    }
+    this.selected = false;
+    this.popup = $('<div id="autocomplete"></div>')[0];
+    this.popup.owner = this;
+    $(this.popup).css({
+      top: parseInt(position.top + this.input.offsetHeight, 10) + 'px',
+      left: parseInt(position.left, 10) + 'px',
+      // If we want to make the dropdown element as wide as the parent input,
+      // INCLUDING the borders, we should use .outerWidth() instead of
+      // .innerWidth(). Otherwise, the autosuggestions dropdown will be smaller,
+      // and that just looks ugly.
+      width: $input.outerWidth() + 'px',
+      display: 'none'
+    });
+    $input.before(this.popup);
+
+    // Do search.
+    this.db.owner = this;
+    this.db.search(this.input.value);
+  };
+
 })(jQuery);
