@@ -25,6 +25,10 @@ function ultima_preprocess_node(&$vars) {
   }
   */
 
+  // Add special classes for view modes. This comes in handy when the site uses
+  // custom display modes for example.
+  $vars['classes_array'][] = 'view-mode-' . $vars['view_mode'];
+
   // Override submitted variable.
   /*
   $vars['submitted'] = t('Submitted by !user on !date', array(
