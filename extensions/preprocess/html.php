@@ -95,6 +95,14 @@ function ultima_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'form-only-page';
   }
 
+  // Check if the website is in maintenance mode.
+  if (variable_get('maintenance_mode', FALSE)) {
+    $vars['classes_array'][] = 'maintenance-mode';
+  }
+  else {
+    $vars['classes_array'][] = 'live-mode';
+  }
+
   // Use an alternative template when "?layout=ajax" is passed through query string.
   if (isset($_GET['layout']) && $_GET['layout'] == 'ajax') {
     $vars['theme_hook_suggestions'][] = 'html__ajax';
