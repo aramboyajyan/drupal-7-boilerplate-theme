@@ -33,6 +33,7 @@ stylesheets[all][] = css/base.responsive.css
 ; Theme stylesheets.
 stylesheets[all][] = css/main.responsive.css
 stylesheets[all][] = css/main.css
+stylesheets[all][] = css/pages.css
 stylesheets[all][] = css/main.quickfix.css
 ; Print stylesheets.
 stylesheets[print][] = css/main.print.css
