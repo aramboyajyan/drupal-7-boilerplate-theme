@@ -88,9 +88,7 @@ function ultima_preprocess_html(&$vars) {
     // Sitewide contact form.
     arg(0) == 'contact' ||
     // User registration, login, forgot password.
-    (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (user_is_anonymous() && !arg(1)))) ||
-    // Ask question, non-admin users.
-    (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'question' && user_is_anonymous())
+    (arg(0) == 'user' && (in_array(arg(1), array('login', 'register', 'password')) || (user_is_anonymous() && !arg(1))))
   ) {
     $vars['classes_array'][] = 'form-only-page';
   }
