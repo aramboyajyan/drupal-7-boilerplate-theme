@@ -1,6 +1,6 @@
 # Ultimate [Drupal 7](http://drupal.org) starter theme
 
-Robust HTMl5 starter theme suitable for custom design and projects of any complexity.
+Robust HTML5 starter theme suitable for custom design and projects of any complexity.
 
 The theme is completely built by using Drupal best practices and standards in coding.
 
