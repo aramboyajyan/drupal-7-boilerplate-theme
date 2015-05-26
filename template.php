@@ -69,6 +69,7 @@ require_once dirname(__FILE__) . '/extensions/hooks/entity-view-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/menu-breadcrumb-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/page-alter.php';
 
 /**
  * Form files.
