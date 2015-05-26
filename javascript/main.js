@@ -29,7 +29,7 @@
 
       // Sample click action.
       $('#header', context).click(function () {
-        console.log('Logged from common.js in the Pong theme.');
+        console.log('Logged from main.js.');
       });
 
       // Automatically focus first fields on login, forgot pass and register
