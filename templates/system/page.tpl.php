@@ -32,6 +32,10 @@
   <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'nav-user', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => 'element-invisible'))); ?>
 <?php endif; ?>
 
+<?php if ($page['mobile_menu']): ?>
+  <?php print render($page['mobile_menu']); ?>
+<?php endif; ?>
+
 <!-- Page title. -->
 <?php if ($title && isset($show_title) && $show_title): ?>
   <?php print render($title_prefix); ?>

@@ -64,6 +64,7 @@ scripts[] = javascript/main.js
 ; ----------------------------------------------------------------------------
 regions[main_menu]      = Main menu
 regions[secondary_menu] = Secondary menu
+regions[mobile_menu]    = Mobile menu
 regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[content]        = Content
