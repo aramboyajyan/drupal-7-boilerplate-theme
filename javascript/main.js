@@ -34,10 +34,12 @@
 
       // Automatically focus first fields on login, forgot pass and register
       // forms as well as the login block.
-      if ($('form#user-login').length)     $('form#user-login input[type="text"]').focus();
-      if ($('#user-register-form').length) $('#user-register-form input[type="text"]').eq(0).focus();
-      if ($('form#user-pass').length)      $('form#user-pass input[type="text"]').focus();
-      if ($('#user-login-form').length)    $('#user-login-form input[type="text"]').focus();
+      $('body').once(function() {
+        if ($('form#user-login').length)     $('form#user-login input[type="text"]').focus();
+        if ($('#user-register-form').length) $('#user-register-form input[type="text"]').eq(0).focus();
+        if ($('form#user-pass').length)      $('form#user-pass input[type="text"]').focus();
+        if ($('#user-login-form').length)    $('#user-login-form input[type="text"]').focus();
+      });
 
       // Popup links. This is handy when certain links need to display just the
       // information, outside of the main theme of the site, for example when
