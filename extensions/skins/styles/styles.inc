@@ -19,6 +19,7 @@ function ultima_skinr_skin_styles_info() {
     // included.
     'attached' => array('css' => array('colors.css')),
     'default status' => 1,
+    // Groups can be: "general", "box", "typography" and "layout".
     'group' => 'typography',
     'options' => array(
       'color_1' => array('title' => t('Red'), 'class' => array('red')),
