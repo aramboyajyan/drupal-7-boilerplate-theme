@@ -70,6 +70,7 @@ require_once dirname(__FILE__) . '/extensions/hooks/form-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/js-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/menu-breadcrumb-alter.php';
 require_once dirname(__FILE__) . '/extensions/hooks/page-alter.php';
+require_once dirname(__FILE__) . '/extensions/hooks/username-alter.php';
 
 /**
  * Form files.
