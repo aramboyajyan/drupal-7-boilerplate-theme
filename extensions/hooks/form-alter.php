@@ -14,22 +14,14 @@
 function ultima_form_alter(&$form, &$form_state, $form_id) {
 
   /**
-   * General overrides.
-   */
-  switch ($form['#id']) {
-    case 'comment-form':
-      // Remove the "Your name" field.
-      unset($form['author']['_author']);
-      break;
-  }
-
-  /**
    * Specific overrides.
    */
   switch ($form_id) {
 
     // Sample implementation for node comment form.
     case 'comment_node_type_form':
+      // Remove the "Your name" field.
+      unset($form['author']['_author']);
       break;
 
     // User login form.
