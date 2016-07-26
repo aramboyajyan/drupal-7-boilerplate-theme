@@ -26,7 +26,6 @@ stylesheets[all][] = css/overrides/system.theme.css
 stylesheets[all][] = css/overrides/system.messages.css
 ; Theme stylesheets - base styles.
 stylesheets[all][] = css/base.reset.css
-stylesheets[all][] = css/base.elements.css
 stylesheets[all][] = css/base.responsive.css
 ; Theme stylesheets.
 stylesheets[all][] = css/main.css
