@@ -45,8 +45,6 @@ stylesheets[print][] = css/main.print.css
 scripts[] = javascript/overrides/autocomplete.js
 ; Removed scripts.
 ; scripts[] = javascript/overrides/
-; jQuery plugins.
-scripts[] = javascript/jquery.hoverIntent-r6.min.js
 ; Other scripts.
 scripts[] = javascript/modernizr-2.6.2.min.js
 scripts[] = javascript/respond-1.3.0.min.js
