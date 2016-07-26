@@ -31,7 +31,6 @@ stylesheets[all][] = css/base.glyphicons.css
 stylesheets[all][] = css/base.elements.css
 stylesheets[all][] = css/base.responsive.css
 ; Theme stylesheets.
-stylesheets[all][] = css/main.responsive.css
 stylesheets[all][] = css/main.css
 stylesheets[all][] = css/pages.css
 stylesheets[all][] = css/main.quickfix.css
