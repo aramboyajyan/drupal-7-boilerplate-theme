@@ -10,9 +10,9 @@
 function ultima_preprocess_page(&$vars) {
 
   // Custom template suggestions (append ?sample for premade page).
-  if (isset($_GET['sample'])) {
-    $vars['theme_hook_suggestions'][] = 'page__sample';
-  }
+  // if (isset($_GET['sample'])) {
+  //   $vars['theme_hook_suggestions'][] = 'page__sample';
+  // }
 
   // Add corresponding page titles to the user pages (login, register, forgot
   // pass).
@@ -112,19 +112,8 @@ function ultima_preprocess_page(&$vars) {
   if (isset($vars['node'])) {
     switch ($vars['node']->type) {
       case 'page':
+        //
         break;
-    }
-  }
-
-  // Sample page layout template classes processing.
-  // See templates/page--sample.tpl.php
-  $vars['content_class'] = 'span12';
-  if (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {
-    if (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
-      $vars['content_class'] = 'span6';
-    }
-    else {
-      $vars['content_class'] = 'span9';
     }
   }
 

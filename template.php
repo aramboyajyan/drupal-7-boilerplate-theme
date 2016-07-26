@@ -11,16 +11,6 @@
  */
 
 /**
- * Flush theme cache when using "?flush=1" in the URL.
- * Uncomment only during development.
- */
-/*
-if (isset($_GET['flush'])) {
-  drupal_flush_all_caches();
-}
-*/
-
-/**
  * Custom functions.
  */
 // 
@@ -54,11 +44,6 @@ require_once dirname(__FILE__) . '/extensions/preprocess/preprocess.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/region.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/search-result.php';
 require_once dirname(__FILE__) . '/extensions/preprocess/user-profile.php';
-
-/**
- * Process functions.
- */
-// 
 
 /**
  * Other hooks.

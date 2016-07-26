@@ -14,10 +14,6 @@
         $(this).attr('target', '_blank');
       });
 
-      // Trigger jQuery placeholder plugin to support the "placeholder"
-      // attribute in older browsers.
-      $('input, textarea').placeholder();
-
       // Messages close button.
       $('.messages .close', context).click(function() {
         $(this).parent('.messages').remove();
@@ -25,11 +21,6 @@
         if (!$('.messages').length) {
           $('#messages-wrap').remove();
         }
-      });
-
-      // Sample click action.
-      $('#header', context).click(function () {
-        console.log('Logged from main.js.');
       });
 
       // Automatically focus first fields on login, forgot pass and register
@@ -62,23 +53,6 @@
           popupWindow.focus();
         }
         return false;
-      });
-
-      // Display a message when certain forms are submitted.
-      // 
-      // 
-      var $forms   = $('#REPLACEME');
-      var $popup   = $('#popup');
-      var $popupBg = $('#popup-bg');
-      $forms.submit(function() {
-        // Add some content in the popup.
-        $popup.html('<h2>Please wait</h2><p>Your request is being processed.</p>');
-        // Disable all buttons.
-        $forms.find('input[type="submit"]').attr('disabled', true);
-        $forms.find('input:focus').blur();
-        // Show the popup and move it up.
-        $popup.show().css('margin-top', - parseInt($popup.outerHeight() / 2));
-        $popupBg.height($(window).height()).show();
       });
 
     }

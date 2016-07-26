@@ -14,15 +14,11 @@ The theme is completely built by using Drupal best practices and standards in co
 - Optional reset styles with [normalize.css](http://necolas.github.com/normalize.css/)
 - Clean organization and flexible architecture for robust websites. The <code>template.php</code> file is used only to include all other files in order to avoid having one file with 1k+ lines of functions and overrides.
 - Custom links preprocessing and wrapping in HTML5 nav tags
-- Basic [Twitter Bootstrap](http://twitter.github.com/bootstrap) styles. However, this can be disabled/removed easily so you can include whatever stylesheets you need for your project.
-- Responsive layout and media queries out of the box. Bootstrap responsive grid is included, but also most used media queries are setup in a separate file for custom styles (smartphone - tablet - notebook - desktop). 
 - Renaming and excluding tabs (local task menu items) mechanism
 - Chrome frame for older browsers and no-JS notification
 - [Skinr](http://drupal.org/project/skinr) support
 - [Panels](http://drupal.org/project/panels) support
-- Sample page.tpl.php (quickstart using Twitter Bootstrap grid)
 - Extended body classes to include vocabulary IDs, user roles and all arugments of current path
-- [Glyphicons](http://glyphicons.com) with Bootstrap styles
 - Support for adding custom tracking scripts (Google Analytics, Piwik, Woopra, Gauge etc.)
 
 ### Note
@@ -32,13 +28,7 @@ Check out the code of both themes to see which one works better for you.
 
 ### Credits
 
-[Twitter Bootstrap](http://twitter.github.com/bootstrap)  
-[HTML5 Boilerplate](http://html5boilerplate.com)  
-[Modernizr](http://modernizr.com)  
-[Selectivizr](http://selectivizr.com/)  
 [Normalize.css](http://necolas.github.com/normalize.css/)  
-[Glyphicons](http://glyphicons.com)  
-[jQuery placeholder](https://github.com/mathiasbynens/jquery-placeholder/tree/1.8.7)
 
 <hr>
 
