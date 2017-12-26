@@ -30,6 +30,11 @@ function ultima_preprocess_node(&$vars) {
     $vars['content']['language']['#access'] = FALSE;
   }
 
+  // Hide node access statistics.
+  if (isset($vars['content']['links']['statistics'])) {
+    $vars['content']['links']['statistics']['#access'] = FALSE;
+  }
+
   // Add special classes for view modes. This comes in handy when the site uses
   // custom display modes for example.
   $vars['classes_array'][] = 'view-mode-' . $vars['view_mode'];
