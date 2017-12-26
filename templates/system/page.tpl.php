@@ -10,7 +10,7 @@
 ?>
 
 <!-- #logo -->
-<a href="<?php print base_path(); ?>" id="logo">
+<a href="<?php print url('<front>'); ?>" id="logo">
   <img src="<?php print $logo; ?>" alt="<?php print $site_name . ' | ' . $site_slogan; ?>">
 </a>
 <!-- /#logo -->
