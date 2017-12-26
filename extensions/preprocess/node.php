@@ -25,6 +25,11 @@ function ultima_preprocess_node(&$vars) {
   }
   */
 
+  // Hide language if it's present.
+  if (isset($vars['content']['language'])) {
+    $vars['content']['language']['#access'] = FALSE;
+  }
+
   // Add special classes for view modes. This comes in handy when the site uses
   // custom display modes for example.
   $vars['classes_array'][] = 'view-mode-' . $vars['view_mode'];
