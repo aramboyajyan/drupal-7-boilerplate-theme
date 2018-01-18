@@ -20,82 +20,84 @@
  * @ingroup views_templates
  */
 ?>
-<table <?php 
-if ($classes) {
-  ?> class="<?php 
-  print $classes;
-  ?>"<?php 
-}
-print $attributes;
-?>>
-   <?php 
-if (!empty($title) || !empty($caption)) {
-  ?>
-     <caption><?php 
-  print $caption . $title;
-  ?></caption>
-  <?php 
-}
-?>
-  <?php 
-if (!empty($header)) {
-  ?>
-    <thead>
-      <tr>
-        <?php 
-  foreach ($header as $field => $label) {
-    ?>
-          <th <?php 
-    if ($header_classes[$field]) {
-      ?> class="<?php 
-      print $header_classes[$field];
-      ?>"<?php 
-    }
-    ?> scope="col">
-            <?php 
-    print $label;
-    ?>
-          </th>
-        <?php 
-  }
-  ?>
-      </tr>
-    </thead>
-  <?php 
-}
-?>
-  <tbody>
-    <?php 
-foreach ($rows as $row_count => $row) {
-  ?>
-      <tr <?php 
-  if ($row_classes[$row_count]) {
+<div class="responsive-table-wrap">
+  <table <?php 
+  if ($classes) {
     ?> class="<?php 
-    print implode(' ', $row_classes[$row_count]);
+    print $classes;
     ?>"<?php 
   }
+  print $attributes;
   ?>>
-        <?php 
-  foreach ($row as $field => $content) {
+     <?php 
+  if (!empty($title) || !empty($caption)) {
     ?>
-          <td <?php 
-    if ($field_classes[$field][$row_count]) {
-      ?> class="<?php 
-      print $field_classes[$field][$row_count];
-      ?>"<?php 
-    }
-    print drupal_attributes($field_attributes[$field][$row_count]);
-    ?>>
-            <?php 
-    print $content;
-    ?>
-          </td>
-        <?php 
+       <caption><?php 
+    print $caption . $title;
+    ?></caption>
+    <?php 
   }
   ?>
-      </tr>
     <?php 
-}
-?>
-  </tbody>
-</table>
+  if (!empty($header)) {
+    ?>
+      <thead>
+        <tr>
+          <?php 
+    foreach ($header as $field => $label) {
+      ?>
+            <th <?php 
+      if ($header_classes[$field]) {
+        ?> class="<?php 
+        print $header_classes[$field];
+        ?>"<?php 
+      }
+      ?> scope="col">
+              <?php 
+      print $label;
+      ?>
+            </th>
+          <?php 
+    }
+    ?>
+        </tr>
+      </thead>
+    <?php 
+  }
+  ?>
+    <tbody>
+      <?php 
+  foreach ($rows as $row_count => $row) {
+    ?>
+        <tr <?php 
+    if ($row_classes[$row_count]) {
+      ?> class="<?php 
+      print implode(' ', $row_classes[$row_count]);
+      ?>"<?php 
+    }
+    ?>>
+          <?php 
+    foreach ($row as $field => $content) {
+      ?>
+            <td <?php 
+      if ($field_classes[$field][$row_count]) {
+        ?> class="<?php 
+        print $field_classes[$field][$row_count];
+        ?>"<?php 
+      }
+      print drupal_attributes($field_attributes[$field][$row_count]);
+      ?>>
+              <?php 
+      print $content;
+      ?>
+            </td>
+          <?php 
+    }
+    ?>
+        </tr>
+      <?php 
+  }
+  ?>
+    </tbody>
+  </table>
+</div>
