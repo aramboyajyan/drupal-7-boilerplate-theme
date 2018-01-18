@@ -34,6 +34,7 @@ stylesheets[print][] = css/print.css
 ; Overrides - other scripts.
 scripts[] = javascript/overrides/autocomplete.js
 ; Theme JS
+scripts[] = javascript/ads.js
 scripts[] = javascript/main.js
 
 ; ----------------------------------------------------------------------------

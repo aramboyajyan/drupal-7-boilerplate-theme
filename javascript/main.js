@@ -55,6 +55,16 @@
         return false;
       });
 
+      // Let's check if the user has AdBlock enabled.
+      $('body').once('adblock', function() {
+        if (window.AdBlockNotPresent !== undefined) {
+          console.log('You do not have AdBlock enabled.');
+        }
+        else {
+          console.log('You have AdBlock enabled.');
+        }
+      });
+
     }
   };
 
