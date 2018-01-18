@@ -27,6 +27,7 @@ require_once dirname(__FILE__) . '/extensions/theme/menu-link.php';
 require_once dirname(__FILE__) . '/extensions/theme/menu-local-task.php';
 require_once dirname(__FILE__) . '/extensions/theme/pager.php';
 require_once dirname(__FILE__) . '/extensions/theme/status-messages.php';
+require_once dirname(__FILE__) . '/extensions/theme/table.php';
 require_once dirname(__FILE__) . '/extensions/theme/textarea.php';
 require_once dirname(__FILE__) . '/extensions/theme/username.php';
 

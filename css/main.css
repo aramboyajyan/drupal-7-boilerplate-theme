@@ -28,5 +28,44 @@ img {
 /*******************************************************************************
  * Various other styles
  ******************************************************************************/
-
+/* Responsive tables. */
+@media (max-width: 767px) {
+  .responsive-table-wrap {
+    width: 100%;
+    float: left;
+    margin: 10px 0 15px 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+    -webkit-overflow-scrolling: touch;
+  }
+  .responsive-table-wrap > table {
+    margin: 0;
+    margin-bottom: 0;
+    border: 0;
+  }
+  .responsive-table-wrap > table > tbody {
+    border-top: 0 none;
+  }
+  .responsive-table-wrap > table > thead > tr > th,
+  .responsive-table-wrap > table > tbody > tr > th,
+  .responsive-table-wrap > table > tfoot > tr > th {
+    white-space: nowrap;
+  }
+  .responsive-table-wrap > table > thead > tr > th:first-child,
+  .responsive-table-wrap > table > tbody > tr > th:first-child,
+  .responsive-table-wrap > table > tfoot > tr > th:first-child {
+    border-left: 0;
+  }
+  .responsive-table-wrap > table > thead > tr > th:last-child,
+  .responsive-table-wrap > table > tbody > tr > th:last-child,
+  .responsive-table-wrap > table > tfoot > tr > th:last-child {
+    border-right: 0;
+  }
+  .responsive-table-wrap > table > tbody > tr:last-child > th,
+  .responsive-table-wrap > table > tfoot > tr:last-child > th {
+    border-bottom: 0;
+  }
+}
 /* Various other styles end */
