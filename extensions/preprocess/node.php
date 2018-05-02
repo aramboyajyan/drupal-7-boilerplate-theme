@@ -29,6 +29,9 @@ function ultima_preprocess_node(&$vars) {
   if (isset($vars['content']['language'])) {
     $vars['content']['language']['#access'] = FALSE;
   }
+  if (isset($vars['content']['links']['translation'])) {
+    $vars['content']['links']['translation']['#access'] = FALSE;
+  }
 
   // Hide node access statistics.
   if (isset($vars['content']['links']['statistics'])) {
